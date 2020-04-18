@@ -1,1 +1,2 @@
 # MoTrackTherapyMobilePublic
+To allow others to use and build upon our hand therapy AI app, we have decided to make the code publicly available. We had to remove some files that we thought might have sensitive user information. If you are interested in running this yourself or editing it (for personal, research, or commercial use), and are having trouble, please contact us and we can work with you and make sure we didn't take out any file that you might need.
