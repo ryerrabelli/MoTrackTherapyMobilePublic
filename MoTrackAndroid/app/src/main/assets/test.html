@@ -1,0 +1,224 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Blank App Game 1</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    	#game1-left-paddle {
+    		background-color: green;
+    		left: 10px;
+    	}
+    	#game1-right-paddle {
+    		background-color: blue;
+    		right: 10px;
+    	}
+    	.game1-paddle {
+    		top: 0;
+    		height: 200px;
+    		width: 10px;
+    		position: absolute;
+    	}
+    	.game1-ball {
+    		width: 20px;
+    		height: 20px;
+    		background-color: red;
+    		border-radius: 10px;
+    		position: absolute;
+    		left: 50px;
+    		top: 50px;
+    	}
+    	.game1-score {
+    		position: absolute;
+    		top: 0;
+    	}
+    	#game1-left-score {
+    		left: 10%;
+    	}
+    	#game1-right-score {
+    		right: 10%;
+    	}
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="cordova.js"></script>
+
+<div data-role="page" id = "page2" data-theme = "a">
+  <div data-role="header">
+    <h1> MoTrack Therapy </h1>
+  </div> <!-- header -->
+  <div data-role="main" class="ui-content">
+
+    <button type="button" name="backbutton" id="pg2backbutton">Back</button>
+    <button type="button" name="leftblockupbutton" id="rightblockbuttonrelease">Stop</button>
+    <button type="button" name="leftblockdownbutton" id="rightblockbuttonpress">Start</button>
+    <div class="game1-paddle" id="game1-left-paddle"></div>
+    <div class="game1-paddle" id="game1-right-paddle"></div>
+    <div class="game1-ball" id="game1-ball"></div>
+    <h1 class="game1-score" id="game1-left-score">0</h1>
+    <h1 class="game1-score" id="game1-right-score">0</h1>
+
+    <script type="text/javascript">
+       $("#pg2backbutton").click(function(){
+          window.location = "tryjquery.html";
+       });
+       $("#rightblockbuttonrelease").click(function(){
+         onKeyRelease("ArrowDown")
+          //onKeyPress("ArrowUp")
+       });
+       $("#rightblockbuttonpress").click("taphold",function(){
+          onKeyPress("ArrowDown")
+       });
+    </script>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+  </div> <!-- main -->
+  <!-- <div data-role="footer">
+    <p>www.motracktherapy.com</p>
+  </div> -->
+</div> <!-- page 2 -->
+
+<input type="button" id="myjsbutton" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+</script>
+
+<script>
+  document.getElementById("myjsbutton").value= "Hi";
+	'use strict';
+	var paddleLeft = document.getElementById('game1-left-paddle');
+	var paddleRight = document.getElementById('game1-right-paddle');
+	var ball = document.getElementById('game1-ball');
+	var paddleLeftTop = 0;
+	var paddleRightTop = 0;
+	var paddleLeftHeight = 200;
+	var paddleRightHeight = 200;
+	var paddleRightDirection = 0;
+	var paddleRightTimer;
+	var paddleLeftDirection = 0;
+	var paddleLeftTimer;
+	paddleLeft.style.top = 0;
+	paddleRight.style.top = 0;
+	var ballXPos = 50;
+	var ballYPos = 50;
+	var ballXDir = 5;
+	var ballYDir = 5;
+	var ballWidth = 20;
+	var ballHeight = 20;
+	var leftScoreDisplay = document.getElementById('game1-left-score');
+	var rightScoreDisplay = document.getElementById('game1-right-score');
+	var leftScore = 0;
+	var rightScore = 0;
+	function updateScoreDisplay() {
+		leftScoreDisplay.innerHTML = leftScore;
+		rightScoreDisplay.innerHTML = rightScore;
+	}
+	function moveBall() {
+		var newBallXPos = ballXPos + ballXDir;
+		var newBallYPos = ballYPos + ballYDir;
+    maxScreenWidth = window.innerWidth;
+    maxScreenHeight = window.innerHeight;
+    minScreenWidth = 0;
+    minScreenHeight = 0;
+		if (newBallXPos + ballWidth > maxScreenWidth) {
+			ballXDir = -Math.abs(ballXDir);
+		}
+		if (newBallYPos + ballHeight > maxScreenHeight) {
+			ballYDir = -Math.abs(ballYDir);
+		}
+		if (newBallXPos < minScreenWidth) {
+			ballXDir = Math.abs(ballXDir);
+		}
+		if (newBallYPos < minScreenHeight) {
+			ballYDir = Math.abs(ballYDir);
+		}
+		ballXPos += ballXDir;
+		ballYPos += ballYDir;
+		if (ballXPos < 20 &&
+			(ballYPos + 20 < paddleLeftTop ||
+			 ballYPos > paddleLeftTop + paddleLeftHeight)) {
+			rightScore += 1;
+			updateScoreDisplay();
+		}
+		if (ballXPos + 20 > window.innerWidth - 20 &&
+			(ballYPos + 20 < paddleRightTop ||
+			 ballYPos > paddleRightTop + paddleRightHeight)) {
+			leftScore += 1;
+			updateScoreDisplay();
+		}
+		ball.style.top = ballYPos + 'px';
+		ball.style.left = ballXPos + 'px';
+	}
+	function moveRightPaddle() {
+		paddleRightTop += paddleRightDirection;
+		paddleRight.style.top = paddleRightTop + 'px';
+	}
+	function moveLeftPaddle() {
+		paddleLeftTop += paddleLeftDirection;
+		paddleLeft.style.top = paddleLeftTop + 'px';
+	}
+	setInterval(moveBall, 25);
+	setInterval(function() {
+		if (ballXDir < 50) ballXDir *= 1.1;
+		if (ballYDir < 50) ballYDir *= 1.1;
+	}, 10000)
+
+	function onKeyPress(code) {
+		switch (code) {
+			case 'ArrowDown':
+				if (!paddleRightTimer) {
+					paddleRightDirection = 10;
+					paddleRightTimer = setInterval(moveRightPaddle, 100);
+				}
+				break;
+			case 'ArrowUp':
+				if (!paddleRightTimer) {
+					paddleRightDirection = -10;
+					paddleRightTimer = setInterval(moveRightPaddle, 100);
+				}
+				break;
+			case 'KeyS':
+				if (!paddleLeftTimer) {
+					paddleLeftDirection = 10;
+					paddleLeftTimer = setInterval(moveLeftPaddle, 100);
+				}
+				break;
+			case 'KeyW':
+				if (!paddleLeftTimer) {
+					paddleLeftDirection = -10;
+					paddleLeftTimer = setInterval(moveLeftPaddle, 100);
+				}
+				break;
+		}
+		console.log(evt);
+	}
+
+	function onKeyRelease(code) {
+		switch (code) {
+			case 'ArrowDown':
+			case 'ArrowUp':
+				clearInterval(paddleRightTimer);
+				paddleRightTimer = null;
+				break;
+			case 'KeyS':
+			case 'KeyW':
+				clearInterval(paddleLeftTimer);
+				paddleLeftTimer = null;
+				break;
+		}
+		console.log(evt);
+	}
+
+	document.addEventListener('keydown', function(evt) {
+		onKeyPress(evt.code)
+	})
+
+	document.addEventListener('keyup', function(evt) {
+		onKeyRelease(evt.code)
+	})
+	</script>
+</body>
+</html>

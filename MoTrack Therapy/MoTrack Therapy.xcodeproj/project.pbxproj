@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63AA09A2E1218ABD5C20EF84 /* Pods_MoTrack_Therapy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB682DA0762395E7A912BB4 /* Pods_MoTrack_Therapy.framework */; };
+		B113D611228C7528003D47D0 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113D610228C7528003D47D0 /* TutorialViewController.swift */; };
+		B1170D7E22374E6100AAB78F /* pronation_ketchup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1170D7C22374E6100AAB78F /* pronation_ketchup.cpp */; };
+		B14609A12423E8B800000CAF /* interactive_tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B146099F2423E8B800000CAF /* interactive_tutorial.cpp */; };
+		B14CBAE42215213B006E2ACF /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B14CBAE32215213B006E2ACF /* assets */; };
+		B14CBB5222160523006E2ACF /* pronation_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14CBB4022160522006E2ACF /* pronation_analysis.cpp */; };
+		B14CBB5322160523006E2ACF /* fist_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14CBB4222160522006E2ACF /* fist_analysis.cpp */; };
+		B14CBB5722160523006E2ACF /* audio_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14CBB4A22160523006E2ACF /* audio_player.cpp */; };
+		B14CBB5822160523006E2ACF /* bilinear_approx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14CBB4B22160523006E2ACF /* bilinear_approx.cpp */; };
+		B16765472331181C00148459 /* tensorflowModel.pbtxt.txt in Resources */ = {isa = PBXBuildFile; fileRef = B16765462331181B00148459 /* tensorflowModel.pbtxt.txt */; };
+		B17A072F2241F00500CDDAF4 /* calibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A072A2241F00400CDDAF4 /* calibration.cpp */; };
+		B17A07302241F00500CDDAF4 /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A072D2241F00500CDDAF4 /* native-lib.cpp */; };
+		B17A07312241F00500CDDAF4 /* motion_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A072E2241F00500CDDAF4 /* motion_info.cpp */; };
+		B17A073D224329B100CDDAF4 /* hook_fist_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A073B224329B100CDDAF4 /* hook_fist_analysis.cpp */; };
+		B17A07402244872E00CDDAF4 /* fabduction_peacock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A073E2244872E00CDDAF4 /* fabduction_peacock.cpp */; };
+		B17A07432245C23400CDDAF4 /* topposition_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07412245C23400CDDAF4 /* topposition_analysis.cpp */; };
+		B1818E4622760DC000465AB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1818E4522760DBF00465AB8 /* GoogleService-Info.plist */; };
+		B182AFDB223B489B0089E07E /* fabduction_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B182AFD9223B489B0089E07E /* fabduction_analysis.cpp */; };
+		B1847BB32214C2B3006E28ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1847BB22214C2B3006E28ED /* AppDelegate.swift */; };
+		B1847BB52214C2B3006E28ED /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1847BB42214C2B3006E28ED /* WebViewController.swift */; };
+		B1847BB82214C2B3006E28ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1847BB62214C2B3006E28ED /* Main.storyboard */; };
+		B1847BBA2214C2B5006E28ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1847BB92214C2B5006E28ED /* Assets.xcassets */; };
+		B1847BBD2214C2B5006E28ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1847BBB2214C2B5006E28ED /* LaunchScreen.storyboard */; };
+		B1847BC72214C5F6006E28ED /* CVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1847BC62214C5F6006E28ED /* CVViewController.swift */; };
+		B1847BCD2214C6A0006E28ED /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1847BCC2214C6A0006E28ED /* OpenCVWrapper.mm */; };
+		B1847BCF2214C76A006E28ED /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1847BCE2214C76A006E28ED /* FrameExtractor.swift */; };
+		B184E140221FAF23000DC866 /* deviation_catapult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B184E13E221FAF23000DC866 /* deviation_catapult.cpp */; };
+		B184E143221FB3E9000DC866 /* deviation_windshield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B184E142221FB3E9000DC866 /* deviation_windshield.cpp */; };
+		B196ECAA2241E41400F2ABEB /* flexion_knock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B196ECA62241E41400F2ABEB /* flexion_knock.cpp */; };
+		B196ECAB2241E41400F2ABEB /* flexion_cliff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B196ECA72241E41400F2ABEB /* flexion_cliff.cpp */; };
+		B19BA0C62296F91C00C37511 /* hook_fist_caterpillar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B19BA0C42296F91C00C37511 /* hook_fist_caterpillar.cpp */; };
+		B1A116952318C7BA0039A927 /* fist_paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A116932318C7B90039A927 /* fist_paddle.cpp */; };
+		B1B8262A230370FA00435FC4 /* tensorflowModel.pb in Resources */ = {isa = PBXBuildFile; fileRef = B1B82628230370F900435FC4 /* tensorflowModel.pb */; };
+		B1D48C832250150E009F8189 /* topposition_alligator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1D48C812250150E009F8189 /* topposition_alligator.cpp */; };
+		B1E6D97C221A4DEB00244F7D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6D97B221A4DEB00244F7D /* opencv2.framework */; };
+		B1E6D984221D52B000244F7D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6D983221D52B000244F7D /* AVFoundation.framework */; };
+		B1EC74832241E6490077392E /* pronation_dial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74822241E6490077392E /* pronation_dial.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		408EDC4FA859D13FAE0A5CE5 /* Pods-MoTrack Therapy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoTrack Therapy.release.xcconfig"; path = "Target Support Files/Pods-MoTrack Therapy/Pods-MoTrack Therapy.release.xcconfig"; sourceTree = "<group>"; };
+		4AB682DA0762395E7A912BB4 /* Pods_MoTrack_Therapy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoTrack_Therapy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C989D82E29A08E3896278B /* Pods-MoTrack Therapy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoTrack Therapy.debug.xcconfig"; path = "Target Support Files/Pods-MoTrack Therapy/Pods-MoTrack Therapy.debug.xcconfig"; sourceTree = "<group>"; };
+		B113D610228C7528003D47D0 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		B1170D7B2237202800AAB78F /* MoTrack Therapy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MoTrack Therapy.entitlements"; sourceTree = "<group>"; };
+		B1170D7C22374E6100AAB78F /* pronation_ketchup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_ketchup.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_ketchup.cpp; sourceTree = "<group>"; };
+		B1170D7D22374E6100AAB78F /* pronation_ketchup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pronation_ketchup.h; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_ketchup.h; sourceTree = "<group>"; };
+		B139082F22408CAE009E2B4F /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../../MoTrackAndroid/app/src/main/cpp/json.hpp; sourceTree = "<group>"; };
+		B146099F2423E8B800000CAF /* interactive_tutorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = interactive_tutorial.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/interactive_tutorial.cpp; sourceTree = "<group>"; };
+		B14609A02423E8B800000CAF /* interactive_tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interactive_tutorial.h; path = ../../MoTrackAndroid/app/src/main/cpp/interactive_tutorial.h; sourceTree = "<group>"; };
+		B14CBAE32215213B006E2ACF /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../MoTrackAndroid/app/src/main/assets; sourceTree = "<group>"; };
+		B14CBB4022160522006E2ACF /* pronation_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_analysis.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_analysis.cpp; sourceTree = "<group>"; };
+		B14CBB4122160522006E2ACF /* pronation_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pronation_analysis.h; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_analysis.h; sourceTree = "<group>"; };
+		B14CBB4222160522006E2ACF /* fist_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fist_analysis.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/fist_analysis.cpp; sourceTree = "<group>"; };
+		B14CBB4622160522006E2ACF /* audio_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio_player.h; path = ../../MoTrackAndroid/app/src/main/cpp/audio_player.h; sourceTree = "<group>"; };
+		B14CBB4722160522006E2ACF /* fist_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fist_analysis.h; path = ../../MoTrackAndroid/app/src/main/cpp/fist_analysis.h; sourceTree = "<group>"; };
+		B14CBB4A22160523006E2ACF /* audio_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_player.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/audio_player.cpp; sourceTree = "<group>"; };
+		B14CBB4B22160523006E2ACF /* bilinear_approx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bilinear_approx.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/bilinear_approx.cpp; sourceTree = "<group>"; };
+		B14CBB4D22160523006E2ACF /* bilinear_approx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bilinear_approx.h; path = ../../MoTrackAndroid/app/src/main/cpp/bilinear_approx.h; sourceTree = "<group>"; };
+		B16765462331181B00148459 /* tensorflowModel.pbtxt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tensorflowModel.pbtxt.txt; path = ../../MoTrackAndroid/app/src/main/assets/dnnmodels/tensorflowModel.pbtxt.txt; sourceTree = "<group>"; };
+		B17A07292241F00400CDDAF4 /* calibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calibration.h; path = ../../MoTrackAndroid/app/src/main/cpp/calibration.h; sourceTree = "<group>"; };
+		B17A072A2241F00400CDDAF4 /* calibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = calibration.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/calibration.cpp; sourceTree = "<group>"; };
+		B17A072B2241F00500CDDAF4 /* motion_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = motion_info.h; path = ../../MoTrackAndroid/app/src/main/cpp/motion_info.h; sourceTree = "<group>"; };
+		B17A072C2241F00500CDDAF4 /* native-lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "native-lib.h"; path = "../../MoTrackAndroid/app/src/main/cpp/native-lib.h"; sourceTree = "<group>"; };
+		B17A072D2241F00500CDDAF4 /* native-lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "native-lib.cpp"; path = "../../MoTrackAndroid/app/src/main/cpp/native-lib.cpp"; sourceTree = "<group>"; };
+		B17A072E2241F00500CDDAF4 /* motion_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = motion_info.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/motion_info.cpp; sourceTree = "<group>"; };
+		B17A073B224329B100CDDAF4 /* hook_fist_analysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = hook_fist_analysis.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/hook_fist_analysis.cpp; sourceTree = "<group>"; };
+		B17A073C224329B100CDDAF4 /* hook_fist_analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hook_fist_analysis.h; path = ../../MoTrackAndroid/app/src/main/cpp/hook_fist_analysis.h; sourceTree = "<group>"; };
+		B17A073E2244872E00CDDAF4 /* fabduction_peacock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fabduction_peacock.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/fabduction_peacock.cpp; sourceTree = "<group>"; };
+		B17A073F2244872E00CDDAF4 /* fabduction_peacock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fabduction_peacock.h; path = ../../MoTrackAndroid/app/src/main/cpp/fabduction_peacock.h; sourceTree = "<group>"; };
+		B17A07412245C23400CDDAF4 /* topposition_analysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = topposition_analysis.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/topposition_analysis.cpp; sourceTree = "<group>"; };
+		B17A07422245C23400CDDAF4 /* topposition_analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = topposition_analysis.h; path = ../../MoTrackAndroid/app/src/main/cpp/topposition_analysis.h; sourceTree = "<group>"; };
+		B1818E4522760DBF00465AB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B182AFD9223B489B0089E07E /* fabduction_analysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fabduction_analysis.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/fabduction_analysis.cpp; sourceTree = "<group>"; };
+		B182AFDA223B489B0089E07E /* fabduction_analysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fabduction_analysis.h; path = ../../MoTrackAndroid/app/src/main/cpp/fabduction_analysis.h; sourceTree = "<group>"; };
+		B1847BAF2214C2B3006E28ED /* MoTrack Therapy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoTrack Therapy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1847BB22214C2B3006E28ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1847BB42214C2B3006E28ED /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B1847BB72214C2B3006E28ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1847BB92214C2B5006E28ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1847BBC2214C2B5006E28ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1847BBE2214C2B5006E28ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1847BC62214C5F6006E28ED /* CVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewController.swift; sourceTree = "<group>"; };
+		B1847BCA2214C69F006E28ED /* MoTrack Therapy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoTrack Therapy-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1847BCB2214C6A0006E28ED /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		B1847BCC2214C6A0006E28ED /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		B1847BCE2214C76A006E28ED /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		B184E13E221FAF23000DC866 /* deviation_catapult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = deviation_catapult.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/deviation_catapult.cpp; sourceTree = "<group>"; };
+		B184E13F221FAF23000DC866 /* deviation_catapult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviation_catapult.h; path = ../../MoTrackAndroid/app/src/main/cpp/deviation_catapult.h; sourceTree = "<group>"; };
+		B184E141221FB3E9000DC866 /* deviation_windshield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviation_windshield.h; path = ../../MoTrackAndroid/app/src/main/cpp/deviation_windshield.h; sourceTree = "<group>"; };
+		B184E142221FB3E9000DC866 /* deviation_windshield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = deviation_windshield.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/deviation_windshield.cpp; sourceTree = "<group>"; };
+		B196ECA62241E41400F2ABEB /* flexion_knock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flexion_knock.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/flexion_knock.cpp; sourceTree = "<group>"; };
+		B196ECA72241E41400F2ABEB /* flexion_cliff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flexion_cliff.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/flexion_cliff.cpp; sourceTree = "<group>"; };
+		B196ECA82241E41400F2ABEB /* flexion_knock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flexion_knock.h; path = ../../MoTrackAndroid/app/src/main/cpp/flexion_knock.h; sourceTree = "<group>"; };
+		B196ECA92241E41400F2ABEB /* flexion_cliff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flexion_cliff.h; path = ../../MoTrackAndroid/app/src/main/cpp/flexion_cliff.h; sourceTree = "<group>"; };
+		B19BA0C42296F91C00C37511 /* hook_fist_caterpillar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = hook_fist_caterpillar.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/hook_fist_caterpillar.cpp; sourceTree = "<group>"; };
+		B19BA0C52296F91C00C37511 /* hook_fist_caterpillar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hook_fist_caterpillar.h; path = ../../MoTrackAndroid/app/src/main/cpp/hook_fist_caterpillar.h; sourceTree = "<group>"; };
+		B1A116932318C7B90039A927 /* fist_paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fist_paddle.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/fist_paddle.cpp; sourceTree = "<group>"; };
+		B1A116942318C7BA0039A927 /* fist_paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fist_paddle.h; path = ../../MoTrackAndroid/app/src/main/cpp/fist_paddle.h; sourceTree = "<group>"; };
+		B1B82628230370F900435FC4 /* tensorflowModel.pb */ = {isa = PBXFileReference; lastKnownFileType = file; name = tensorflowModel.pb; path = ../../MoTrackAndroid/app/src/main/assets/dnnmodels/tensorflowModel.pb; sourceTree = "<group>"; };
+		B1D48C812250150E009F8189 /* topposition_alligator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = topposition_alligator.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/topposition_alligator.cpp; sourceTree = "<group>"; };
+		B1D48C822250150E009F8189 /* topposition_alligator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = topposition_alligator.h; path = ../../MoTrackAndroid/app/src/main/cpp/topposition_alligator.h; sourceTree = "<group>"; };
+		B1E6D97B221A4DEB00244F7D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		B1E6D983221D52B000244F7D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B1EC74812241E6490077392E /* pronation_dial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pronation_dial.h; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_dial.h; sourceTree = "<group>"; };
+		B1EC74822241E6490077392E /* pronation_dial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_dial.cpp; path = ../../MoTrackAndroid/app/src/main/cpp/pronation_dial.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1847BAC2214C2B3006E28ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E6D984221D52B000244F7D /* AVFoundation.framework in Frameworks */,
+				B1E6D97C221A4DEB00244F7D /* opencv2.framework in Frameworks */,
+				63AA09A2E1218ABD5C20EF84 /* Pods_MoTrack_Therapy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B14CBB3F22160512006E2ACF /* cpp_code */ = {
+			isa = PBXGroup;
+			children = (
+				B17A072D2241F00500CDDAF4 /* native-lib.cpp */,
+				B17A072C2241F00500CDDAF4 /* native-lib.h */,
+				B17A072A2241F00400CDDAF4 /* calibration.cpp */,
+				B17A07292241F00400CDDAF4 /* calibration.h */,
+				B17A072E2241F00500CDDAF4 /* motion_info.cpp */,
+				B17A072B2241F00500CDDAF4 /* motion_info.h */,
+				B14CBB4A22160523006E2ACF /* audio_player.cpp */,
+				B14CBB4622160522006E2ACF /* audio_player.h */,
+				B14CBB4222160522006E2ACF /* fist_analysis.cpp */,
+				B14CBB4722160522006E2ACF /* fist_analysis.h */,
+				B17A073B224329B100CDDAF4 /* hook_fist_analysis.cpp */,
+				B17A073C224329B100CDDAF4 /* hook_fist_analysis.h */,
+				B14CBB4B22160523006E2ACF /* bilinear_approx.cpp */,
+				B14CBB4D22160523006E2ACF /* bilinear_approx.h */,
+				B14CBB4022160522006E2ACF /* pronation_analysis.cpp */,
+				B14CBB4122160522006E2ACF /* pronation_analysis.h */,
+				B182AFD9223B489B0089E07E /* fabduction_analysis.cpp */,
+				B182AFDA223B489B0089E07E /* fabduction_analysis.h */,
+				B17A07412245C23400CDDAF4 /* topposition_analysis.cpp */,
+				B17A07422245C23400CDDAF4 /* topposition_analysis.h */,
+				B1A116932318C7B90039A927 /* fist_paddle.cpp */,
+				B1A116942318C7BA0039A927 /* fist_paddle.h */,
+				B196ECA62241E41400F2ABEB /* flexion_knock.cpp */,
+				B196ECA82241E41400F2ABEB /* flexion_knock.h */,
+				B196ECA72241E41400F2ABEB /* flexion_cliff.cpp */,
+				B196ECA92241E41400F2ABEB /* flexion_cliff.h */,
+				B184E142221FB3E9000DC866 /* deviation_windshield.cpp */,
+				B184E141221FB3E9000DC866 /* deviation_windshield.h */,
+				B184E13E221FAF23000DC866 /* deviation_catapult.cpp */,
+				B184E13F221FAF23000DC866 /* deviation_catapult.h */,
+				B1EC74822241E6490077392E /* pronation_dial.cpp */,
+				B1EC74812241E6490077392E /* pronation_dial.h */,
+				B1170D7C22374E6100AAB78F /* pronation_ketchup.cpp */,
+				B1170D7D22374E6100AAB78F /* pronation_ketchup.h */,
+				B17A073E2244872E00CDDAF4 /* fabduction_peacock.cpp */,
+				B17A073F2244872E00CDDAF4 /* fabduction_peacock.h */,
+				B1D48C812250150E009F8189 /* topposition_alligator.cpp */,
+				B1D48C822250150E009F8189 /* topposition_alligator.h */,
+				B19BA0C42296F91C00C37511 /* hook_fist_caterpillar.cpp */,
+				B19BA0C52296F91C00C37511 /* hook_fist_caterpillar.h */,
+				B146099F2423E8B800000CAF /* interactive_tutorial.cpp */,
+				B14609A02423E8B800000CAF /* interactive_tutorial.h */,
+				B139082F22408CAE009E2B4F /* json.hpp */,
+			);
+			name = cpp_code;
+			sourceTree = "<group>";
+		};
+		B1847BA62214C2B3006E28ED = {
+			isa = PBXGroup;
+			children = (
+				B14CBAE32215213B006E2ACF /* assets */,
+				B1847BB12214C2B3006E28ED /* MoTrack Therapy */,
+				B1847BB02214C2B3006E28ED /* Products */,
+				B1E6D982221D52AF00244F7D /* Frameworks */,
+				EF6B524C48A65F53B35AE988 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B1847BB02214C2B3006E28ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1847BAF2214C2B3006E28ED /* MoTrack Therapy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1847BB12214C2B3006E28ED /* MoTrack Therapy */ = {
+			isa = PBXGroup;
+			children = (
+				B1170D7B2237202800AAB78F /* MoTrack Therapy.entitlements */,
+				B14CBB3F22160512006E2ACF /* cpp_code */,
+				B1847BB22214C2B3006E28ED /* AppDelegate.swift */,
+				B1E6D97B221A4DEB00244F7D /* opencv2.framework */,
+				B1847BB62214C2B3006E28ED /* Main.storyboard */,
+				B1847BBB2214C2B5006E28ED /* LaunchScreen.storyboard */,
+				B1847BB92214C2B5006E28ED /* Assets.xcassets */,
+				B1847BBE2214C2B5006E28ED /* Info.plist */,
+				B1847BB42214C2B3006E28ED /* WebViewController.swift */,
+				B1847BC62214C5F6006E28ED /* CVViewController.swift */,
+				B113D610228C7528003D47D0 /* TutorialViewController.swift */,
+				B1847BCB2214C6A0006E28ED /* OpenCVWrapper.h */,
+				B1847BCC2214C6A0006E28ED /* OpenCVWrapper.mm */,
+				B1847BCA2214C69F006E28ED /* MoTrack Therapy-Bridging-Header.h */,
+				B1B82628230370F900435FC4 /* tensorflowModel.pb */,
+				B16765462331181B00148459 /* tensorflowModel.pbtxt.txt */,
+				B1847BCE2214C76A006E28ED /* FrameExtractor.swift */,
+				B1818E4522760DBF00465AB8 /* GoogleService-Info.plist */,
+			);
+			path = "MoTrack Therapy";
+			sourceTree = "<group>";
+		};
+		B1E6D982221D52AF00244F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6D983221D52B000244F7D /* AVFoundation.framework */,
+				4AB682DA0762395E7A912BB4 /* Pods_MoTrack_Therapy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF6B524C48A65F53B35AE988 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C989D82E29A08E3896278B /* Pods-MoTrack Therapy.debug.xcconfig */,
+				408EDC4FA859D13FAE0A5CE5 /* Pods-MoTrack Therapy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1847BAE2214C2B3006E28ED /* MoTrack Therapy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1847BC12214C2B5006E28ED /* Build configuration list for PBXNativeTarget "MoTrack Therapy" */;
+			buildPhases = (
+				54E312BEC2BB4BE2E47C3DD5 /* [CP] Check Pods Manifest.lock */,
+				B1847BAB2214C2B3006E28ED /* Sources */,
+				B1847BAC2214C2B3006E28ED /* Frameworks */,
+				B1847BAD2214C2B3006E28ED /* Resources */,
+				B1D17D3D87F5A87C17CFF824 /* [CP] Embed Pods Frameworks */,
+				B11171C322AD81D400434FCB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoTrack Therapy";
+			productName = "MoTrack Therapy";
+			productReference = B1847BAF2214C2B3006E28ED /* MoTrack Therapy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1847BA72214C2B3006E28ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "MoTrack Therapy";
+				TargetAttributes = {
+					B1847BAE2214C2B3006E28ED = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B1847BAA2214C2B3006E28ED /* Build configuration list for PBXProject "MoTrack Therapy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1847BA62214C2B3006E28ED;
+			productRefGroup = B1847BB02214C2B3006E28ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1847BAE2214C2B3006E28ED /* MoTrack Therapy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1847BAD2214C2B3006E28ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B8262A230370FA00435FC4 /* tensorflowModel.pb in Resources */,
+				B1847BBD2214C2B5006E28ED /* LaunchScreen.storyboard in Resources */,
+				B14CBAE42215213B006E2ACF /* assets in Resources */,
+				B1818E4622760DC000465AB8 /* GoogleService-Info.plist in Resources */,
+				B16765472331181C00148459 /* tensorflowModel.pbtxt.txt in Resources */,
+				B1847BBA2214C2B5006E28ED /* Assets.xcassets in Resources */,
+				B1847BB82214C2B3006E28ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54E312BEC2BB4BE2E47C3DD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoTrack Therapy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11171C322AD81D400434FCB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		B1D17D3D87F5A87C17CFF824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoTrack Therapy/Pods-MoTrack Therapy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoTrack Therapy/Pods-MoTrack Therapy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1847BAB2214C2B3006E28ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17A073D224329B100CDDAF4 /* hook_fist_analysis.cpp in Sources */,
+				B1EC74832241E6490077392E /* pronation_dial.cpp in Sources */,
+				B17A07432245C23400CDDAF4 /* topposition_analysis.cpp in Sources */,
+				B17A07402244872E00CDDAF4 /* fabduction_peacock.cpp in Sources */,
+				B1847BB52214C2B3006E28ED /* WebViewController.swift in Sources */,
+				B1A116952318C7BA0039A927 /* fist_paddle.cpp in Sources */,
+				B19BA0C62296F91C00C37511 /* hook_fist_caterpillar.cpp in Sources */,
+				B184E140221FAF23000DC866 /* deviation_catapult.cpp in Sources */,
+				B196ECAA2241E41400F2ABEB /* flexion_knock.cpp in Sources */,
+				B17A072F2241F00500CDDAF4 /* calibration.cpp in Sources */,
+				B182AFDB223B489B0089E07E /* fabduction_analysis.cpp in Sources */,
+				B1D48C832250150E009F8189 /* topposition_alligator.cpp in Sources */,
+				B113D611228C7528003D47D0 /* TutorialViewController.swift in Sources */,
+				B1847BC72214C5F6006E28ED /* CVViewController.swift in Sources */,
+				B14CBB5722160523006E2ACF /* audio_player.cpp in Sources */,
+				B17A07302241F00500CDDAF4 /* native-lib.cpp in Sources */,
+				B1847BCD2214C6A0006E28ED /* OpenCVWrapper.mm in Sources */,
+				B14CBB5222160523006E2ACF /* pronation_analysis.cpp in Sources */,
+				B1170D7E22374E6100AAB78F /* pronation_ketchup.cpp in Sources */,
+				B1847BB32214C2B3006E28ED /* AppDelegate.swift in Sources */,
+				B196ECAB2241E41400F2ABEB /* flexion_cliff.cpp in Sources */,
+				B1847BCF2214C76A006E28ED /* FrameExtractor.swift in Sources */,
+				B184E143221FB3E9000DC866 /* deviation_windshield.cpp in Sources */,
+				B14609A12423E8B800000CAF /* interactive_tutorial.cpp in Sources */,
+				B14CBB5322160523006E2ACF /* fist_analysis.cpp in Sources */,
+				B14CBB5822160523006E2ACF /* bilinear_approx.cpp in Sources */,
+				B17A07312241F00500CDDAF4 /* motion_info.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1847BB62214C2B3006E28ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1847BB72214C2B3006E28ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1847BBB2214C2B5006E28ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1847BBC2214C2B5006E28ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1847BBF2214C2B5006E28ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1847BC02214C2B5006E28ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1847BC22214C2B5006E28ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C989D82E29A08E3896278B /* Pods-MoTrack Therapy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "MoTrack Therapy/MoTrack Therapy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 47;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 96M538M5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+				);
+				INFOPLIST_FILE = "MoTrack Therapy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MoTrackTherapy.MoTrackTestiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoTrack Therapy/MoTrack Therapy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1847BC32214C2B5006E28ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408EDC4FA859D13FAE0A5CE5 /* Pods-MoTrack Therapy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "MoTrack Therapy/MoTrack Therapy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 47;
+				DEVELOPMENT_TEAM = 96M538M5M4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+					"$(PROJECT_DIR)/MoTrack\\ Therapy",
+				);
+				INFOPLIST_FILE = "MoTrack Therapy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MoTrackTherapy.MoTrackTestiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoTrack Therapy/MoTrack Therapy-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1847BAA2214C2B3006E28ED /* Build configuration list for PBXProject "MoTrack Therapy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1847BBF2214C2B5006E28ED /* Debug */,
+				B1847BC02214C2B5006E28ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1847BC12214C2B5006E28ED /* Build configuration list for PBXNativeTarget "MoTrack Therapy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1847BC22214C2B5006E28ED /* Debug */,
+				B1847BC32214C2B5006E28ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1847BA72214C2B3006E28ED /* Project object */;
+}

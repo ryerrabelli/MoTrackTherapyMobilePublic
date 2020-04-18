@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "measureAlgorithmPerformance(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int, int, nlohmann::basic_json&lt;std::__1::map, std::__1::vector, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer&gt;, bool, bool, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "photoName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "::preprocess(cv::Mat &amp;, cv::Mat &amp;, cv::Mat &amp;, double, int):calibration.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "frameEdit.channels()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "frameRelevant.channels()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "analyzeMeasurementData(nlohmann::basic_json&lt;std::__1::map, std::__1::vector, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer&gt;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[&quot;consolidatedData&quot;][&quot;allIoUs&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "error.size()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "::analyze_fist(cv::Mat, cv::Mat &amp;, int, double, bool):fist_analysis.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "row.channels()">
+            </PersistentString>
+            <PersistentString
+               value = "cv::sum(row)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "measureAlgorithm(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "99/10">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "measureAlgorithm(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "frameCV.channels()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

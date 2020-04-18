@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":4110,"versionName":"4.1.1","enabled":true,"outputFile":"OpenCV4-release.apk","fullName":"release","baseName":"release"},"path":"AndroidManifest.xml","properties":{"packageId":"org.opencv","split":"","minSdkVersion":"1"}}]

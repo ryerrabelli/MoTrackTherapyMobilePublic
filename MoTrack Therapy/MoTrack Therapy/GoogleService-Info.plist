@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>512965618127-ehpnh4sloviibv4j0es9geaj5v0bevac.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.512965618127-ehpnh4sloviibv4j0es9geaj5v0bevac</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>512965618127-psep9kcdpvba7h714phamnk7bmn5qflj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8q9kFSZNmXS08LCkF-UKW-GeqcI8INMM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>512965618127</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MoTrackTherapy.MoTrackTestiOS</string>
+	<key>PROJECT_ID</key>
+	<string>motracktherapymobileapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>motracktherapymobileapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:512965618127:ios:7de3b7e1a0a4f186</string>
+	<key>DATABASE_URL</key>
+	<string>https://motracktherapymobileapp.firebaseio.com</string>
+</dict>
+</plist>

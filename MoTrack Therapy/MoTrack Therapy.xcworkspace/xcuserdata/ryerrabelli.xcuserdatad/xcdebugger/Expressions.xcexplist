@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "preprocess(cv::Mat&amp;, cv::Mat&amp;, cv::Mat&amp;, double, int):calibration.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pixel[0]">
+            </PersistentString>
+            <PersistentString
+               value = "sizeRefImg.at&lt;uchar&gt;(p.y/ratio,p.x/ratio) ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "::+[OpenCVWrapper initializeObjcWithReps:andHand:andJSONDataStr:](NSInteger, NSInteger, NSString *):OpenCVWrapper.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSBundle mainBundle]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "inputImage(cv::Mat, int, int, bool):native-lib.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "ex.what()">
+            </PersistentString>
+            <PersistentString
+               value = "time_span20.count()/1000">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "initializeMotionsMap(int, nlohmann::basic_json&lt;std::__1::map, std::__1::vector, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer&gt;):native-lib.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "motionsMap.motions[1].param">
+            </PersistentString>
+            <PersistentString
+               value = "motionsMap.motions[0].param">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "addHandForSizeReference(cv::Mat&amp;, bool, int):native-lib.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "blursize*scale">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WebViewController.userContentController(_:didReceive:):WebViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "body[&quot;nrtbcEach&quot;] ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "do_caterpillar_game(cv::Mat&amp;, cv::Mat&amp;, int, double):hook_fist_caterpillar.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "paramHistory">
+            </PersistentString>
+            <PersistentString
+               value = "paramHistory.size()">
+            </PersistentString>
+            <PersistentString
+               value = "paramHistory.end()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CVViewController.captured(inputImage:):CVViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: &quot;orientation&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "UIDevice.current.orientation">
+            </PersistentString>
+            <PersistentString
+               value = "(UIApplication.shared.delegate as! AppDelegate).shouldRotateLandscape">
+            </PersistentString>
+            <PersistentString
+               value = "motionsMap.motions">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,84 @@
+<html dir="ltr">
+  <head>
+    <title>Test firestore</title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script> <!-- -->
+
+    <script>
+      
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDTt4Mjyx6z75KwfvYaXocBc0sTmG3b3lQ",
+        authDomain: "motracktherapymobileapp.firebaseapp.com",
+        databaseURL: "https://motracktherapymobileapp.firebaseio.com",
+        projectId: "motracktherapymobileapp",
+        storageBucket: "motracktherapymobileapp.appspot.com",
+        messagingSenderId: "512965618127"
+      };
+      firebase.initializeApp(config);
+
+      //-----------------------------------
+      var db = firebase.firestore();
+      // Disable deprecated features
+      db.settings({
+        timestampsInSnapshots: true
+      });
+      db.collection("users").add({
+          first: "Ada",
+          last: "Lovelace",
+          born: 1815
+      })
+      .then(function(docRef) {
+          console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+          console.error("Error adding document: ", error);
+      });
+
+
+    </script>
+
+  </head>
+  <body>
+    Hello
+    <p id="time-text"> </p>
+
+
+
+    <script>
+      $("#time-text").html(getTimeAsReadableString());
+
+      function getTimeAsReadableString() {
+        return new Date(Date.now()).toLocaleString();
+        //return new Date(Date.now()).toLocaleString('en-GB', { timeZone: 'UTC' });
+
+        var dt = new Date();
+        var offset = dt.getTimezoneOffset();
+
+        var offsetPrefix = "";
+        if (offset < 0) {
+          offsetPrefix = "+";
+          offset = -offset;
+        } else {
+          offsetPrefix = "-";
+        }
+        var offsetHrs = Math.floor( offset/60.0 );
+        var offsetMin = Math.floor( offset - offsetHrs*60.0 );
+        var offsetMinStr = offsetMin.toString();
+        if (offsetMinStr.length < 2) {
+          offsetMinStr = "0" + offsetMinStr;
+        }
+        var offsetStr = offsetPrefix + offsetHrs + ":" + offsetMinStr;
+
+        //add +1 to month because month starts from 0
+        //getTimezoneOffset() returns minutes from UTC time
+        var timeStr = (dt.getMonth()+1) + "/" + dt.getDate() + "/"
+         + dt.getFullYear() + " "+ dt.getHours() + ":" + dt.getMinutes()
+         + ":" + dt.getSeconds() + " " + offsetStr;
+         return timeStr;
+      }
+    </script>
+  </body>
+</html>

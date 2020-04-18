@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B11171C622B0215700434FCB /* hook_fist_caterpillar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B11171C522B0215700434FCB /* hook_fist_caterpillar.cpp */; };
+		B149322B222E7E0E0059D7FC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B149322A222E7E0E0059D7FC /* main.cpp */; };
+		B149324C222E86260059D7FC /* deviation_windshield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B149323F222E86260059D7FC /* deviation_windshield.cpp */; };
+		B149324D222E86260059D7FC /* deviation_catapult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1493241222E86260059D7FC /* deviation_catapult.cpp */; };
+		B149324E222E86260059D7FC /* bilinear_approx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1493244222E86260059D7FC /* bilinear_approx.cpp */; };
+		B15B46BC2379B9F7001FE882 /* fist_paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15B46BA2379B9F6001FE882 /* fist_paddle.cpp */; };
+		B167AD1522BC904600EC19D7 /* simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B167AD1322BC904600EC19D7 /* simulator.cpp */; };
+		B167AD1822BC90F600EC19D7 /* alg_measurer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B167AD1622BC90F500EC19D7 /* alg_measurer.cpp */; };
+		B1770CE7225EB25300D665C4 /* topposition_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1770CDF225EB25200D665C4 /* topposition_analysis.cpp */; };
+		B1770CE8225EB25300D665C4 /* topposition_alligator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1770CE2225EB25200D665C4 /* topposition_alligator.cpp */; };
+		B1770CE9225EB25300D665C4 /* fabduction_peacock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1770CE3225EB25200D665C4 /* fabduction_peacock.cpp */; };
+		B1770CEA225EB25300D665C4 /* hook_fist_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1770CE6225EB25300D665C4 /* hook_fist_analysis.cpp */; };
+		B17A07272241EE9D00CDDAF4 /* pronation_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07232241EE9D00CDDAF4 /* pronation_analysis.cpp */; };
+		B17A07282241EE9D00CDDAF4 /* fist_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07252241EE9D00CDDAF4 /* fist_analysis.cpp */; };
+		B17A07382241F07600CDDAF4 /* calibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07332241F07600CDDAF4 /* calibration.cpp */; };
+		B17A07392241F07600CDDAF4 /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07362241F07600CDDAF4 /* native-lib.cpp */; };
+		B17A073A2241F07600CDDAF4 /* motion_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17A07372241F07600CDDAF4 /* motion_info.cpp */; };
+		B1EC74942241E7040077392E /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74842241E7040077392E /* FaceDetector.cpp */; };
+		B1EC74952241E7040077392E /* flexion_cliff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74852241E7040077392E /* flexion_cliff.cpp */; };
+		B1EC74962241E7040077392E /* pronation_ketchup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74862241E7040077392E /* pronation_ketchup.cpp */; };
+		B1EC74972241E7040077392E /* fabduction_analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74892241E7040077392E /* fabduction_analysis.cpp */; };
+		B1EC74982241E7040077392E /* pronation_dial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC748C2241E7040077392E /* pronation_dial.cpp */; };
+		B1EC74992241E7040077392E /* flexion_knock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC748F2241E7040077392E /* flexion_knock.cpp */; };
+		B1EC749A2241E7040077392E /* audio_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1EC74932241E7040077392E /* audio_player.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1493225222E7E0E0059D7FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B11171C422B0215600434FCB /* hook_fist_caterpillar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hook_fist_caterpillar.h; path = ../../../MoTrackAndroid/app/src/main/cpp/hook_fist_caterpillar.h; sourceTree = "<group>"; };
+		B11171C522B0215700434FCB /* hook_fist_caterpillar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hook_fist_caterpillar.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/hook_fist_caterpillar.cpp; sourceTree = "<group>"; };
+		B1493227222E7E0E0059D7FC /* MoTrack Therapy Mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MoTrack Therapy Mac"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B149322A222E7E0E0059D7FC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B1493231222E84310059D7FC /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		B149323D222E86260059D7FC /* bilinear_approx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bilinear_approx.h; path = ../../../MoTrackAndroid/app/src/main/cpp/bilinear_approx.h; sourceTree = "<group>"; };
+		B149323F222E86260059D7FC /* deviation_windshield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = deviation_windshield.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/deviation_windshield.cpp; sourceTree = "<group>"; };
+		B1493240222E86260059D7FC /* deviation_windshield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviation_windshield.h; path = ../../../MoTrackAndroid/app/src/main/cpp/deviation_windshield.h; sourceTree = "<group>"; };
+		B1493241222E86260059D7FC /* deviation_catapult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = deviation_catapult.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/deviation_catapult.cpp; sourceTree = "<group>"; };
+		B1493242222E86260059D7FC /* deviation_catapult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deviation_catapult.h; path = ../../../MoTrackAndroid/app/src/main/cpp/deviation_catapult.h; sourceTree = "<group>"; };
+		B1493244222E86260059D7FC /* bilinear_approx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bilinear_approx.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/bilinear_approx.cpp; sourceTree = "<group>"; };
+		B15B46BA2379B9F6001FE882 /* fist_paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fist_paddle.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/fist_paddle.cpp; sourceTree = "<group>"; };
+		B15B46BB2379B9F7001FE882 /* fist_paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fist_paddle.h; path = ../../../MoTrackAndroid/app/src/main/cpp/fist_paddle.h; sourceTree = "<group>"; };
+		B167AD1322BC904600EC19D7 /* simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulator.cpp; sourceTree = "<group>"; };
+		B167AD1422BC904600EC19D7 /* simulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simulator.h; sourceTree = "<group>"; };
+		B167AD1622BC90F500EC19D7 /* alg_measurer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = alg_measurer.cpp; sourceTree = "<group>"; };
+		B167AD1722BC90F600EC19D7 /* alg_measurer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alg_measurer.h; sourceTree = "<group>"; };
+		B16FEB3622624257006F93B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1770CDF225EB25200D665C4 /* topposition_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = topposition_analysis.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/topposition_analysis.cpp; sourceTree = "<group>"; };
+		B1770CE0225EB25200D665C4 /* hook_fist_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hook_fist_analysis.h; path = ../../../MoTrackAndroid/app/src/main/cpp/hook_fist_analysis.h; sourceTree = "<group>"; };
+		B1770CE1225EB25200D665C4 /* topposition_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = topposition_analysis.h; path = ../../../MoTrackAndroid/app/src/main/cpp/topposition_analysis.h; sourceTree = "<group>"; };
+		B1770CE2225EB25200D665C4 /* topposition_alligator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = topposition_alligator.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/topposition_alligator.cpp; sourceTree = "<group>"; };
+		B1770CE3225EB25200D665C4 /* fabduction_peacock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fabduction_peacock.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/fabduction_peacock.cpp; sourceTree = "<group>"; };
+		B1770CE4225EB25300D665C4 /* topposition_alligator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = topposition_alligator.h; path = ../../../MoTrackAndroid/app/src/main/cpp/topposition_alligator.h; sourceTree = "<group>"; };
+		B1770CE5225EB25300D665C4 /* fabduction_peacock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fabduction_peacock.h; path = ../../../MoTrackAndroid/app/src/main/cpp/fabduction_peacock.h; sourceTree = "<group>"; };
+		B1770CE6225EB25300D665C4 /* hook_fist_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hook_fist_analysis.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/hook_fist_analysis.cpp; sourceTree = "<group>"; };
+		B17A07232241EE9D00CDDAF4 /* pronation_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_analysis.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_analysis.cpp; sourceTree = "<group>"; };
+		B17A07242241EE9D00CDDAF4 /* pronation_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pronation_analysis.h; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_analysis.h; sourceTree = "<group>"; };
+		B17A07252241EE9D00CDDAF4 /* fist_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fist_analysis.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/fist_analysis.cpp; sourceTree = "<group>"; };
+		B17A07262241EE9D00CDDAF4 /* fist_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fist_analysis.h; path = ../../../MoTrackAndroid/app/src/main/cpp/fist_analysis.h; sourceTree = "<group>"; };
+		B17A07322241F07600CDDAF4 /* calibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calibration.h; path = ../../../MoTrackAndroid/app/src/main/cpp/calibration.h; sourceTree = "<group>"; };
+		B17A07332241F07600CDDAF4 /* calibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = calibration.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/calibration.cpp; sourceTree = "<group>"; };
+		B17A07342241F07600CDDAF4 /* motion_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = motion_info.h; path = ../../../MoTrackAndroid/app/src/main/cpp/motion_info.h; sourceTree = "<group>"; };
+		B17A07352241F07600CDDAF4 /* native-lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "native-lib.h"; path = "../../../MoTrackAndroid/app/src/main/cpp/native-lib.h"; sourceTree = "<group>"; };
+		B17A07362241F07600CDDAF4 /* native-lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "native-lib.cpp"; path = "../../../MoTrackAndroid/app/src/main/cpp/native-lib.cpp"; sourceTree = "<group>"; };
+		B17A07372241F07600CDDAF4 /* motion_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = motion_info.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/motion_info.cpp; sourceTree = "<group>"; };
+		B1EC74842241E7040077392E /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/FaceDetector.cpp; sourceTree = "<group>"; };
+		B1EC74852241E7040077392E /* flexion_cliff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flexion_cliff.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/flexion_cliff.cpp; sourceTree = "<group>"; };
+		B1EC74862241E7040077392E /* pronation_ketchup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_ketchup.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_ketchup.cpp; sourceTree = "<group>"; };
+		B1EC74872241E7040077392E /* pronation_ketchup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pronation_ketchup.h; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_ketchup.h; sourceTree = "<group>"; };
+		B1EC74882241E7040077392E /* flexion_cliff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flexion_cliff.h; path = ../../../MoTrackAndroid/app/src/main/cpp/flexion_cliff.h; sourceTree = "<group>"; };
+		B1EC74892241E7040077392E /* fabduction_analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fabduction_analysis.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/fabduction_analysis.cpp; sourceTree = "<group>"; };
+		B1EC748A2241E7040077392E /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceDetector.h; path = ../../../MoTrackAndroid/app/src/main/cpp/FaceDetector.h; sourceTree = "<group>"; };
+		B1EC748B2241E7040077392E /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt.xml; path = ../../../MoTrackAndroid/app/src/main/cpp/haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		B1EC748C2241E7040077392E /* pronation_dial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pronation_dial.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_dial.cpp; sourceTree = "<group>"; };
+		B1EC748D2241E7040077392E /* pronation_dial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pronation_dial.h; path = ../../../MoTrackAndroid/app/src/main/cpp/pronation_dial.h; sourceTree = "<group>"; };
+		B1EC748E2241E7040077392E /* flexion_knock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flexion_knock.h; path = ../../../MoTrackAndroid/app/src/main/cpp/flexion_knock.h; sourceTree = "<group>"; };
+		B1EC748F2241E7040077392E /* flexion_knock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flexion_knock.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/flexion_knock.cpp; sourceTree = "<group>"; };
+		B1EC74902241E7040077392E /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../../../MoTrackAndroid/app/src/main/cpp/json.hpp; sourceTree = "<group>"; };
+		B1EC74912241E7040077392E /* fabduction_analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fabduction_analysis.h; path = ../../../MoTrackAndroid/app/src/main/cpp/fabduction_analysis.h; sourceTree = "<group>"; };
+		B1EC74922241E7040077392E /* audio_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio_player.h; path = ../../../MoTrackAndroid/app/src/main/cpp/audio_player.h; sourceTree = "<group>"; };
+		B1EC74932241E7040077392E /* audio_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_player.cpp; path = ../../../MoTrackAndroid/app/src/main/cpp/audio_player.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1493224222E7E0E0059D7FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B149321E222E7E0E0059D7FC = {
+			isa = PBXGroup;
+			children = (
+				B1493229222E7E0E0059D7FC /* MoTrack Therapy Mac */,
+				B1493228222E7E0E0059D7FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1493228222E7E0E0059D7FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1493227222E7E0E0059D7FC /* MoTrack Therapy Mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1493229222E7E0E0059D7FC /* MoTrack Therapy Mac */ = {
+			isa = PBXGroup;
+			children = (
+				B1493232222E86000059D7FC /* cpp_code */,
+				B149322A222E7E0E0059D7FC /* main.cpp */,
+				B1493231222E84310059D7FC /* main.h */,
+				B167AD1322BC904600EC19D7 /* simulator.cpp */,
+				B167AD1422BC904600EC19D7 /* simulator.h */,
+				B167AD1622BC90F500EC19D7 /* alg_measurer.cpp */,
+				B167AD1722BC90F600EC19D7 /* alg_measurer.h */,
+				B16FEB3622624257006F93B7 /* Info.plist */,
+			);
+			path = "MoTrack Therapy Mac";
+			sourceTree = "<group>";
+		};
+		B1493232222E86000059D7FC /* cpp_code */ = {
+			isa = PBXGroup;
+			children = (
+				B17A07362241F07600CDDAF4 /* native-lib.cpp */,
+				B17A07352241F07600CDDAF4 /* native-lib.h */,
+				B17A07332241F07600CDDAF4 /* calibration.cpp */,
+				B17A07322241F07600CDDAF4 /* calibration.h */,
+				B17A07372241F07600CDDAF4 /* motion_info.cpp */,
+				B17A07342241F07600CDDAF4 /* motion_info.h */,
+				B1EC74932241E7040077392E /* audio_player.cpp */,
+				B1EC74922241E7040077392E /* audio_player.h */,
+				B17A07252241EE9D00CDDAF4 /* fist_analysis.cpp */,
+				B17A07262241EE9D00CDDAF4 /* fist_analysis.h */,
+				B1770CE6225EB25300D665C4 /* hook_fist_analysis.cpp */,
+				B1770CE0225EB25200D665C4 /* hook_fist_analysis.h */,
+				B1493244222E86260059D7FC /* bilinear_approx.cpp */,
+				B149323D222E86260059D7FC /* bilinear_approx.h */,
+				B17A07232241EE9D00CDDAF4 /* pronation_analysis.cpp */,
+				B17A07242241EE9D00CDDAF4 /* pronation_analysis.h */,
+				B1EC74892241E7040077392E /* fabduction_analysis.cpp */,
+				B1EC74912241E7040077392E /* fabduction_analysis.h */,
+				B1770CDF225EB25200D665C4 /* topposition_analysis.cpp */,
+				B1770CE1225EB25200D665C4 /* topposition_analysis.h */,
+				B1EC748F2241E7040077392E /* flexion_knock.cpp */,
+				B1EC748E2241E7040077392E /* flexion_knock.h */,
+				B1EC74852241E7040077392E /* flexion_cliff.cpp */,
+				B1EC74882241E7040077392E /* flexion_cliff.h */,
+				B149323F222E86260059D7FC /* deviation_windshield.cpp */,
+				B1493240222E86260059D7FC /* deviation_windshield.h */,
+				B1493241222E86260059D7FC /* deviation_catapult.cpp */,
+				B1493242222E86260059D7FC /* deviation_catapult.h */,
+				B1EC748C2241E7040077392E /* pronation_dial.cpp */,
+				B1EC748D2241E7040077392E /* pronation_dial.h */,
+				B1EC74862241E7040077392E /* pronation_ketchup.cpp */,
+				B1EC74872241E7040077392E /* pronation_ketchup.h */,
+				B1770CE3225EB25200D665C4 /* fabduction_peacock.cpp */,
+				B1770CE5225EB25300D665C4 /* fabduction_peacock.h */,
+				B1770CE2225EB25200D665C4 /* topposition_alligator.cpp */,
+				B1770CE4225EB25300D665C4 /* topposition_alligator.h */,
+				B11171C522B0215700434FCB /* hook_fist_caterpillar.cpp */,
+				B11171C422B0215600434FCB /* hook_fist_caterpillar.h */,
+				B15B46BA2379B9F6001FE882 /* fist_paddle.cpp */,
+				B15B46BB2379B9F7001FE882 /* fist_paddle.h */,
+				B1EC74902241E7040077392E /* json.hpp */,
+				B1EC74842241E7040077392E /* FaceDetector.cpp */,
+				B1EC748A2241E7040077392E /* FaceDetector.h */,
+				B1EC748B2241E7040077392E /* haarcascade_frontalface_alt.xml */,
+			);
+			path = cpp_code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1493226222E7E0E0059D7FC /* MoTrack Therapy Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B149322E222E7E0E0059D7FC /* Build configuration list for PBXNativeTarget "MoTrack Therapy Mac" */;
+			buildPhases = (
+				B1493223222E7E0E0059D7FC /* Sources */,
+				B1493224222E7E0E0059D7FC /* Frameworks */,
+				B1493225222E7E0E0059D7FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoTrack Therapy Mac";
+			productName = "MoTrack Therapy Mac";
+			productReference = B1493227222E7E0E0059D7FC /* MoTrack Therapy Mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B149321F222E7E0E0059D7FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "MoTrack Therapy";
+				TargetAttributes = {
+					B1493226222E7E0E0059D7FC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B1493222222E7E0E0059D7FC /* Build configuration list for PBXProject "MoTrack Therapy Mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B149321E222E7E0E0059D7FC;
+			productRefGroup = B1493228222E7E0E0059D7FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1493226222E7E0E0059D7FC /* MoTrack Therapy Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1493223222E7E0E0059D7FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EC74942241E7040077392E /* FaceDetector.cpp in Sources */,
+				B17A073A2241F07600CDDAF4 /* motion_info.cpp in Sources */,
+				B149322B222E7E0E0059D7FC /* main.cpp in Sources */,
+				B1EC74972241E7040077392E /* fabduction_analysis.cpp in Sources */,
+				B167AD1522BC904600EC19D7 /* simulator.cpp in Sources */,
+				B1770CEA225EB25300D665C4 /* hook_fist_analysis.cpp in Sources */,
+				B1EC74982241E7040077392E /* pronation_dial.cpp in Sources */,
+				B15B46BC2379B9F7001FE882 /* fist_paddle.cpp in Sources */,
+				B149324C222E86260059D7FC /* deviation_windshield.cpp in Sources */,
+				B1770CE7225EB25300D665C4 /* topposition_analysis.cpp in Sources */,
+				B167AD1822BC90F600EC19D7 /* alg_measurer.cpp in Sources */,
+				B1EC74952241E7040077392E /* flexion_cliff.cpp in Sources */,
+				B149324D222E86260059D7FC /* deviation_catapult.cpp in Sources */,
+				B149324E222E86260059D7FC /* bilinear_approx.cpp in Sources */,
+				B17A07282241EE9D00CDDAF4 /* fist_analysis.cpp in Sources */,
+				B1EC74962241E7040077392E /* pronation_ketchup.cpp in Sources */,
+				B17A07382241F07600CDDAF4 /* calibration.cpp in Sources */,
+				B17A07392241F07600CDDAF4 /* native-lib.cpp in Sources */,
+				B1EC74992241E7040077392E /* flexion_knock.cpp in Sources */,
+				B11171C622B0215700434FCB /* hook_fist_caterpillar.cpp in Sources */,
+				B1770CE9225EB25300D665C4 /* fabduction_peacock.cpp in Sources */,
+				B1EC749A2241E7040077392E /* audio_player.cpp in Sources */,
+				B1770CE8225EB25300D665C4 /* topposition_alligator.cpp in Sources */,
+				B17A07272241EE9D00CDDAF4 /* pronation_analysis.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B149322C222E7E0E0059D7FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B149322D222E7E0E0059D7FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B149322F222E7E0E0059D7FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96M538M5M4;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"MY_OS=-2",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/opencv/4.1.0_2/include/**";
+				INFOPLIST_FILE = "$(SRCROOT)/MoTrack Therapy Mac/Info.plist";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/opencv/4.1.0_2/lib/**";
+				OTHER_LDFLAGS = (
+					"-I/usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.1.0_2/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.1.0_2/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_quality",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1493230222E7E0E0059D7FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96M538M5M4;
+				GCC_PREPROCESSOR_DEFINITIONS = "MY_OS=-2";
+				INFOPLIST_FILE = "$(SRCROOT)/MoTrack Therapy Mac/Info.plist";
+				OTHER_LDFLAGS = (
+					"-I/usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.1.0_2/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.1.0_2/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_quality",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1493222222E7E0E0059D7FC /* Build configuration list for PBXProject "MoTrack Therapy Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B149322C222E7E0E0059D7FC /* Debug */,
+				B149322D222E7E0E0059D7FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B149322E222E7E0E0059D7FC /* Build configuration list for PBXNativeTarget "MoTrack Therapy Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B149322F222E7E0E0059D7FC /* Debug */,
+				B1493230222E7E0E0059D7FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B149321F222E7E0E0059D7FC /* Project object */;
+}

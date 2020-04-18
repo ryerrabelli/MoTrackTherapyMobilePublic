@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Blank App</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+  <!-- <script type="text/javascript" src="cordova.js"></script> -->
+
+    <div data-role="page" id = "page1" data-theme = "a">
+        <div data-role="header">
+          <h1> Test MoTrack Therapy </h1>
+        </div> <!-- header -->
+
+        <div data-role="main" class="ui-content">
+          <video width="25%" controls volume=0 poster="Dropbox/ui_media/games/tutorialvideoplaceholder.png">
+            <source src="testvideo.mov" type="video/mp4">
+            <track src="http://motracktherapy.com/testsubtitles.vtt" default kind="captions" srclang="en" showing/> <!-- src="Dropbox/ui_media/games/testsubtitles.vtt" -->
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+          <!-- Dropbox/ui_media/games/testsubtitles.vtt -->
+          <!-- http://motracktherapy.com/testsubtitles.vtt -->
+
+
+          <div class='ui-field-contain which-hand-gif-field-contain' style="text-align: center">
+            <label for='hand-select-fist'> hand </label>
+            <select id='hand-select-fist' class='hand-select-option' name='hand-select' data-role='flipswitch'>
+              <!-- if you change this text ("left" and "right"), you need to change this's listener js function correspondingly -->
+              <option selected=''>right</option>
+              <option>left</option>
+            </select>
+          </div>
+          <!--- <input id="testinput" type="number"/> -->
+          <button type="button" name="loginbutton" id="loginbutton">Log in</button>
+          <button type="button" name="signupbutton">Sign up</button>
+          <button type="button" name="demobutton" id="demobutton">Demo</button>
+          <script type="text/javascript">
+             $("#loginbutton").click(function(){
+                window.location = "#page2";
+             });
+          </script>
+          <script type="text/javascript">
+             $("#demobutton").click(function(){
+                //showAndroidToast("hi")
+                //Android.showToast("starting new");
+                Android.startGame("Demo");
+             });
+          </script>
+        </div> <!-- main -->
+        <div data-role="footer">
+          <p>www.motracktherapy.com</p>
+        </div>
+      </div> <!-- page sign up -->
+
+
+      <div data-role="main" class="ui-content">
+
+        <!--- <input id="testinput" type="number"/> -->
+        <button type="button" name="loginbutton" id="loginbutton">Log in</button>
+        <button type="button" name="signupbutton">Sign up</button>
+        <button type="button" name="demobutton" id="demobutton">Demo</button>
+        <script type="text/javascript">
+           $("#loginbutton").click(function(){
+              window.location = "#page2";
+           });
+        </script>
+        <script type="text/javascript">
+           $("#demobutton").click(function(){
+              //showAndroidToast("hi")
+              //Android.showToast("starting new");
+              Android.startGame("Demo");
+           });
+        </script>
+      </div> <!-- main -->
+      <div data-role="footer">
+        <p>www.motracktherapy.com</p>
+      </div>
+    </div> <!-- page 1 -->
+
+
+    <div data-role="page" id = "page2" data-theme = "a">
+      <div data-role="header">
+        <h1> MoTrack Therapy </h1>
+      </div> <!-- header -->
+      <div data-role="main" class="ui-content">
+
+        <!--- <input id="testinput" type="number"/> -->
+        <button type="button" name="backbutton" id="pg1backbutton">Back</button>
+        <button type="button" name="game1button" id="game1button">Game #1</button>
+        <button type="button" name="fistgame1button" id="fistgame1button">Fist Game 1</button>
+        <script type="text/javascript">
+           $("#pg1backbutton").click(function(){
+              window.location = "#page1";
+           });
+           $("#game1button").click(function(){
+              window.location = "test.html";
+           });
+           $("#fistgame1button").click(function(){
+              Android.startGame("Fist Game 1");
+           });
+        </script>
+      </div> <!-- main -->
+      <div data-role="footer">
+        <p>www.motracktherapy.com</p>
+      </div>
+    </div> <!-- page 2 -->
+
+
+  <!-- <input type="button" id="myjsbutton" value="Say hello" onClick="showAndroidToast('Hello Android!')" /> -->
+  <script type="text/javascript">
+      function showAndroidToast(toast) {
+          Android.showToast(toast);
+      }
+  </script>
+
+  <script>
+    //document.getElementById("myjsbutton").value= "Hi";
+     'use strict';
+
+
+  </script>
+</body>
+</html>

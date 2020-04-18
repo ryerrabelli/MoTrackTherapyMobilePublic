@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.motracktherapy.motrack.CVActivity">
+
+    <!-- Button that turns on and off learning -->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:background="#30ABDF"
+        android:fontFamily="@font/raleway"
+        android:text="ToggleButton"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="487dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignEnd="@+id/backgroundbutton"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="39dp"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="Background"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="Learn"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/raleway"
+        android:text="SKIP"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/raleway"
+        android:text="RESET"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipButton"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/skipButton"
+        android:layout_alignEnd="@+id/skipButton"
+        android:background="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skipButton"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="236dp"
+        android:background="#30ABDF"
+        android:fontFamily="@font/raleway"
+        android:text="Pause"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/backgroundbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="134dp"
+        android:background="#30ABDF"
+        android:fontFamily="@font/raleway"
+        android:text="Button"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,3085 @@
+node {
+  name: "input_image"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        unknown_rank: true
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_14/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_14/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_14/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_14/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/filter_conv_ds_14-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_14/filter_conv_ds_14-pointwise-weights_quantized_const"
+  input: "conv_ds_14/filter_conv_ds_14-pointwise-weights_quantized_min"
+  input: "conv_ds_14/filter_conv_ds_14-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_13/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_13/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_13/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/filter_conv_ds_13-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_13/filter_conv_ds_13-pointwise-weights_quantized_const"
+  input: "conv_ds_13/filter_conv_ds_13-pointwise-weights_quantized_min"
+  input: "conv_ds_13/filter_conv_ds_13-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_12/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_12/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_12/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/filter_conv_ds_12-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_12/filter_conv_ds_12-pointwise-weights_quantized_const"
+  input: "conv_ds_12/filter_conv_ds_12-pointwise-weights_quantized_min"
+  input: "conv_ds_12/filter_conv_ds_12-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_11/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_11/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_11/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/filter_conv_ds_11-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_11/filter_conv_ds_11-pointwise-weights_quantized_const"
+  input: "conv_ds_11/filter_conv_ds_11-pointwise-weights_quantized_min"
+  input: "conv_ds_11/filter_conv_ds_11-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_10/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_10/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_10/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/filter_conv_ds_10-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_10/filter_conv_ds_10-pointwise-weights_quantized_const"
+  input: "conv_ds_10/filter_conv_ds_10-pointwise-weights_quantized_min"
+  input: "conv_ds_10/filter_conv_ds_10-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_9/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_9/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_9/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/filter_conv_ds_9-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_9/filter_conv_ds_9-pointwise-weights_quantized_const"
+  input: "conv_ds_9/filter_conv_ds_9-pointwise-weights_quantized_min"
+  input: "conv_ds_9/filter_conv_ds_9-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_8/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_8/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_8/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/filter_conv_ds_8-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_8/filter_conv_ds_8-pointwise-weights_quantized_const"
+  input: "conv_ds_8/filter_conv_ds_8-pointwise-weights_quantized_min"
+  input: "conv_ds_8/filter_conv_ds_8-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_7/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_7/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_7/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/filter_conv_ds_7-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_7/filter_conv_ds_7-pointwise-weights_quantized_const"
+  input: "conv_ds_7/filter_conv_ds_7-pointwise-weights_quantized_min"
+  input: "conv_ds_7/filter_conv_ds_7-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_6/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_6/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_6/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/filter_conv_ds_6-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_6/filter_conv_ds_6-pointwise-weights_quantized_const"
+  input: "conv_ds_6/filter_conv_ds_6-pointwise-weights_quantized_min"
+  input: "conv_ds_6/filter_conv_ds_6-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_5/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_5/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_5/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/filter_conv_ds_5-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_5/filter_conv_ds_5-pointwise-weights_quantized_const"
+  input: "conv_ds_5/filter_conv_ds_5-pointwise-weights_quantized_min"
+  input: "conv_ds_5/filter_conv_ds_5-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_4/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_4/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_4/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/filter_conv_ds_4-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_4/filter_conv_ds_4-pointwise-weights_quantized_const"
+  input: "conv_ds_4/filter_conv_ds_4-pointwise-weights_quantized_min"
+  input: "conv_ds_4/filter_conv_ds_4-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_3/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_3/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_3/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/filter_conv_ds_3-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_3/filter_conv_ds_3-pointwise-weights_quantized_const"
+  input: "conv_ds_3/filter_conv_ds_3-pointwise-weights_quantized_min"
+  input: "conv_ds_3/filter_conv_ds_3-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/Conv2D_bn_offset"
+  op: "Dequantize"
+  input: "conv_ds_2/Conv2D_bn_offset_quantized_const"
+  input: "conv_ds_2/Conv2D_bn_offset_quantized_min"
+  input: "conv_ds_2/Conv2D_bn_offset_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/filter_conv_ds_2-pointwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_2/filter_conv_ds_2-pointwise-weights_quantized_const"
+  input: "conv_ds_2/filter_conv_ds_2-pointwise-weights_quantized_min"
+  input: "conv_ds_2/filter_conv_ds_2-pointwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_2/bias"
+  op: "Dequantize"
+  input: "conv2d_transpose_2/bias_quantized_const"
+  input: "conv2d_transpose_2/bias_quantized_min"
+  input: "conv2d_transpose_2/bias_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_2/kernel"
+  op: "Dequantize"
+  input: "conv2d_transpose_2/kernel_quantized_const"
+  input: "conv2d_transpose_2/kernel_quantized_min"
+  input: "conv2d_transpose_2/kernel_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_1/bias"
+  op: "Dequantize"
+  input: "conv2d_transpose_1/bias_quantized_const"
+  input: "conv2d_transpose_1/bias_quantized_min"
+  input: "conv2d_transpose_1/bias_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_1/kernel"
+  op: "Dequantize"
+  input: "conv2d_transpose_1/kernel_quantized_const"
+  input: "conv2d_transpose_1/kernel_quantized_min"
+  input: "conv2d_transpose_1/kernel_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose/bias"
+  op: "Dequantize"
+  input: "conv2d_transpose/bias_quantized_const"
+  input: "conv2d_transpose/bias_quantized_min"
+  input: "conv2d_transpose/bias_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv2d_transpose/kernel"
+  op: "Dequantize"
+  input: "conv2d_transpose/kernel_quantized_const"
+  input: "conv2d_transpose/kernel_quantized_min"
+  input: "conv2d_transpose/kernel_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "b8"
+  op: "Dequantize"
+  input: "b8_quantized_const"
+  input: "b8_quantized_min"
+  input: "b8_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "W8"
+  op: "Dequantize"
+  input: "W8_quantized_const"
+  input: "W8_quantized_min"
+  input: "W8_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "b7"
+  op: "Dequantize"
+  input: "b7_quantized_const"
+  input: "b7_quantized_min"
+  input: "b7_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "W7"
+  op: "Dequantize"
+  input: "W7_quantized_const"
+  input: "W7_quantized_min"
+  input: "W7_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_14/filter_conv_ds_14-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_14/filter_conv_ds_14-depthwise-weights_quantized_const"
+  input: "conv_ds_14/filter_conv_ds_14-depthwise-weights_quantized_min"
+  input: "conv_ds_14/filter_conv_ds_14-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_13/filter_conv_ds_13-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_13/filter_conv_ds_13-depthwise-weights_quantized_const"
+  input: "conv_ds_13/filter_conv_ds_13-depthwise-weights_quantized_min"
+  input: "conv_ds_13/filter_conv_ds_13-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_12/filter_conv_ds_12-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_12/filter_conv_ds_12-depthwise-weights_quantized_const"
+  input: "conv_ds_12/filter_conv_ds_12-depthwise-weights_quantized_min"
+  input: "conv_ds_12/filter_conv_ds_12-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_11/filter_conv_ds_11-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_11/filter_conv_ds_11-depthwise-weights_quantized_const"
+  input: "conv_ds_11/filter_conv_ds_11-depthwise-weights_quantized_min"
+  input: "conv_ds_11/filter_conv_ds_11-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_10/filter_conv_ds_10-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_10/filter_conv_ds_10-depthwise-weights_quantized_const"
+  input: "conv_ds_10/filter_conv_ds_10-depthwise-weights_quantized_min"
+  input: "conv_ds_10/filter_conv_ds_10-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_9/filter_conv_ds_9-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_9/filter_conv_ds_9-depthwise-weights_quantized_const"
+  input: "conv_ds_9/filter_conv_ds_9-depthwise-weights_quantized_min"
+  input: "conv_ds_9/filter_conv_ds_9-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_8/filter_conv_ds_8-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_8/filter_conv_ds_8-depthwise-weights_quantized_const"
+  input: "conv_ds_8/filter_conv_ds_8-depthwise-weights_quantized_min"
+  input: "conv_ds_8/filter_conv_ds_8-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_7/filter_conv_ds_7-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_7/filter_conv_ds_7-depthwise-weights_quantized_const"
+  input: "conv_ds_7/filter_conv_ds_7-depthwise-weights_quantized_min"
+  input: "conv_ds_7/filter_conv_ds_7-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_6/filter_conv_ds_6-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_6/filter_conv_ds_6-depthwise-weights_quantized_const"
+  input: "conv_ds_6/filter_conv_ds_6-depthwise-weights_quantized_min"
+  input: "conv_ds_6/filter_conv_ds_6-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_5/filter_conv_ds_5-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_5/filter_conv_ds_5-depthwise-weights_quantized_const"
+  input: "conv_ds_5/filter_conv_ds_5-depthwise-weights_quantized_min"
+  input: "conv_ds_5/filter_conv_ds_5-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_4/filter_conv_ds_4-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_4/filter_conv_ds_4-depthwise-weights_quantized_const"
+  input: "conv_ds_4/filter_conv_ds_4-depthwise-weights_quantized_min"
+  input: "conv_ds_4/filter_conv_ds_4-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_3/filter_conv_ds_3-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_3/filter_conv_ds_3-depthwise-weights_quantized_const"
+  input: "conv_ds_3/filter_conv_ds_3-depthwise-weights_quantized_min"
+  input: "conv_ds_3/filter_conv_ds_3-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_variance_quantized_const"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_variance_quantized_min"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_mean_quantized_const"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_mean_quantized_min"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/beta_quantized_const"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/beta_quantized_min"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/gamma_quantized_const"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/gamma_quantized_min"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_ds_2/filter_conv_ds_2-depthwise-weights"
+  op: "Dequantize"
+  input: "conv_ds_2/filter_conv_ds_2-depthwise-weights_quantized_const"
+  input: "conv_ds_2/filter_conv_ds_2-depthwise-weights_quantized_min"
+  input: "conv_ds_2/filter_conv_ds_2-depthwise-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1/batch_normalization/moving_variance"
+  op: "Dequantize"
+  input: "conv_1/batch_normalization/moving_variance_quantized_const"
+  input: "conv_1/batch_normalization/moving_variance_quantized_min"
+  input: "conv_1/batch_normalization/moving_variance_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1/batch_normalization/moving_mean"
+  op: "Dequantize"
+  input: "conv_1/batch_normalization/moving_mean_quantized_const"
+  input: "conv_1/batch_normalization/moving_mean_quantized_min"
+  input: "conv_1/batch_normalization/moving_mean_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1/batch_normalization/beta"
+  op: "Dequantize"
+  input: "conv_1/batch_normalization/beta_quantized_const"
+  input: "conv_1/batch_normalization/beta_quantized_min"
+  input: "conv_1/batch_normalization/beta_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1/batch_normalization/gamma"
+  op: "Dequantize"
+  input: "conv_1/batch_normalization/gamma_quantized_const"
+  input: "conv_1/batch_normalization/gamma_quantized_min"
+  input: "conv_1/batch_normalization/gamma_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1-weights/filter_conv_1-weights"
+  op: "Dequantize"
+  input: "conv_1-weights/filter_conv_1-weights_quantized_const"
+  input: "conv_1-weights/filter_conv_1-weights_quantized_min"
+  input: "conv_1-weights/filter_conv_1-weights_quantized_max"
+  attr {
+    key: "mode"
+    value {
+      s: "MIN_FIRST"
+    }
+  }
+}
+node {
+  name: "conv_1-weights/Conv2D"
+  op: "Conv2D"
+  input: "input_image:0"
+  input: "conv_1-weights/filter_conv_1-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_1-weights/Relu"
+  op: "Relu"
+  input: "conv_1-weights/Conv2D"
+}
+node {
+  name: "conv_1/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_1-weights/Relu"
+  input: "conv_1/batch_normalization/gamma"
+  input: "conv_1/batch_normalization/beta"
+  input: "conv_1/batch_normalization/moving_mean"
+  input: "conv_1/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_1/Relu6"
+  op: "Relu6"
+  input: "conv_1/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_2/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_1/Relu6"
+  input: "conv_ds_2/filter_conv_ds_2-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_2/depthwise"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/gamma"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/beta"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_2/conv_ds_2-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_2/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_2/conv_ds_2-depthwise/Relu6"
+  input: "conv_ds_2/filter_conv_ds_2-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_2/conv_ds_2-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_2/Conv2D"
+  input: "conv_ds_2/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_2/conv_ds_2-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_2/conv_ds_2-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_3/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_2/conv_ds_2-pointwise/Relu6"
+  input: "conv_ds_3/filter_conv_ds_3-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_3/depthwise"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/gamma"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/beta"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_3/conv_ds_3-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_3/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_3/conv_ds_3-depthwise/Relu6"
+  input: "conv_ds_3/filter_conv_ds_3-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_3/conv_ds_3-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_3/Conv2D"
+  input: "conv_ds_3/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_3/conv_ds_3-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_3/conv_ds_3-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_4/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_3/conv_ds_3-pointwise/Relu6"
+  input: "conv_ds_4/filter_conv_ds_4-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_4/depthwise"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/gamma"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/beta"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_4/conv_ds_4-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_4/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_4/conv_ds_4-depthwise/Relu6"
+  input: "conv_ds_4/filter_conv_ds_4-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_4/conv_ds_4-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_4/Conv2D"
+  input: "conv_ds_4/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_4/conv_ds_4-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_4/conv_ds_4-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_5/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_4/conv_ds_4-pointwise/Relu6"
+  input: "conv_ds_5/filter_conv_ds_5-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_5/depthwise"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/gamma"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/beta"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_5/conv_ds_5-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_5/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_5/conv_ds_5-depthwise/Relu6"
+  input: "conv_ds_5/filter_conv_ds_5-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_5/conv_ds_5-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_5/Conv2D"
+  input: "conv_ds_5/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_5/conv_ds_5-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_5/conv_ds_5-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_6/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_5/conv_ds_5-pointwise/Relu6"
+  input: "conv_ds_6/filter_conv_ds_6-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_6/depthwise"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/gamma"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/beta"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_6/conv_ds_6-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_6/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_6/conv_ds_6-depthwise/Relu6"
+  input: "conv_ds_6/filter_conv_ds_6-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_6/conv_ds_6-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_6/Conv2D"
+  input: "conv_ds_6/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_6/conv_ds_6-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_6/conv_ds_6-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_7/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_6/conv_ds_6-pointwise/Relu6"
+  input: "conv_ds_7/filter_conv_ds_7-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_7/depthwise"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/gamma"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/beta"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_7/conv_ds_7-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_7/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_7/conv_ds_7-depthwise/Relu6"
+  input: "conv_ds_7/filter_conv_ds_7-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_7/conv_ds_7-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_7/Conv2D"
+  input: "conv_ds_7/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_7/conv_ds_7-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_7/conv_ds_7-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_8/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_7/conv_ds_7-pointwise/Relu6"
+  input: "conv_ds_8/filter_conv_ds_8-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_8/depthwise"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/gamma"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/beta"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_8/conv_ds_8-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_8/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_8/conv_ds_8-depthwise/Relu6"
+  input: "conv_ds_8/filter_conv_ds_8-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_8/conv_ds_8-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_8/Conv2D"
+  input: "conv_ds_8/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_8/conv_ds_8-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_8/conv_ds_8-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_9/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_8/conv_ds_8-pointwise/Relu6"
+  input: "conv_ds_9/filter_conv_ds_9-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_9/depthwise"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/gamma"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/beta"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_9/conv_ds_9-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_9/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_9/conv_ds_9-depthwise/Relu6"
+  input: "conv_ds_9/filter_conv_ds_9-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_9/conv_ds_9-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_9/Conv2D"
+  input: "conv_ds_9/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_9/conv_ds_9-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_9/conv_ds_9-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_10/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_9/conv_ds_9-pointwise/Relu6"
+  input: "conv_ds_10/filter_conv_ds_10-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_10/depthwise"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/gamma"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/beta"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_10/conv_ds_10-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_10/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_10/conv_ds_10-depthwise/Relu6"
+  input: "conv_ds_10/filter_conv_ds_10-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_10/conv_ds_10-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_10/Conv2D"
+  input: "conv_ds_10/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_10/conv_ds_10-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_10/conv_ds_10-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_11/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_10/conv_ds_10-pointwise/Relu6"
+  input: "conv_ds_11/filter_conv_ds_11-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_11/depthwise"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/gamma"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/beta"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_11/conv_ds_11-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_11/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_11/conv_ds_11-depthwise/Relu6"
+  input: "conv_ds_11/filter_conv_ds_11-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_11/conv_ds_11-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_11/Conv2D"
+  input: "conv_ds_11/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_11/conv_ds_11-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_11/conv_ds_11-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_12/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_11/conv_ds_11-pointwise/Relu6"
+  input: "conv_ds_12/filter_conv_ds_12-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_12/depthwise"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/gamma"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/beta"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_12/conv_ds_12-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_12/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_12/conv_ds_12-depthwise/Relu6"
+  input: "conv_ds_12/filter_conv_ds_12-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_12/conv_ds_12-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_12/Conv2D"
+  input: "conv_ds_12/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_12/conv_ds_12-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_12/conv_ds_12-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_13/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_12/conv_ds_12-pointwise/Relu6"
+  input: "conv_ds_13/filter_conv_ds_13-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_13/depthwise"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/gamma"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/beta"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_13/conv_ds_13-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_13/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_13/conv_ds_13-depthwise/Relu6"
+  input: "conv_ds_13/filter_conv_ds_13-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_13/conv_ds_13-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_13/Conv2D"
+  input: "conv_ds_13/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_13/conv_ds_13-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_13/conv_ds_13-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_14/depthwise"
+  op: "DepthwiseConv2dNative"
+  input: "conv_ds_13/conv_ds_13-pointwise/Relu6"
+  input: "conv_ds_14/filter_conv_ds_14-depthwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/FusedBatchNorm"
+  op: "FusedBatchNorm"
+  input: "conv_ds_14/depthwise"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/gamma"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/beta"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_mean"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/moving_variance"
+  attr {
+    key: "epsilon"
+    value {
+      f: 0.0010000000474974513
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-depthwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_14/conv_ds_14-depthwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "conv_ds_14/Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_14/conv_ds_14-depthwise/Relu6"
+  input: "conv_ds_14/filter_conv_ds_14-pointwise-weights"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv_ds_14/conv_ds_14-pointwise/batch_normalization/FusedBatchNorm"
+  op: "BiasAdd"
+  input: "conv_ds_14/Conv2D"
+  input: "conv_ds_14/Conv2D_bn_offset"
+}
+node {
+  name: "conv_ds_14/conv_ds_14-pointwise/Relu6"
+  op: "Relu6"
+  input: "conv_ds_14/conv_ds_14-pointwise/batch_normalization/FusedBatchNorm"
+}
+node {
+  name: "Conv2D"
+  op: "Conv2D"
+  input: "conv_ds_14/conv_ds_14-pointwise/Relu6"
+  input: "W7"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "BiasAdd"
+  op: "BiasAdd"
+  input: "Conv2D"
+  input: "b7"
+}
+node {
+  name: "relu7"
+  op: "Relu"
+  input: "BiasAdd"
+}
+node {
+  name: "Conv2D_1"
+  op: "Conv2D"
+  input: "relu7"
+  input: "W8"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "BiasAdd_1"
+  op: "BiasAdd"
+  input: "Conv2D_1"
+  input: "b8"
+}
+node {
+  name: "conv2d_transpose/conv2d_transpose"
+  op: "Conv2DBackpropInput"
+  input: "conv2d_transpose/stack/_0__cf__0"
+  input: "conv2d_transpose/kernel"
+  input: "BiasAdd_1"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv2d_transpose/BiasAdd"
+  op: "BiasAdd"
+  input: "conv2d_transpose/conv2d_transpose"
+  input: "conv2d_transpose/bias"
+}
+node {
+  name: "conv2d_transpose_1/conv2d_transpose"
+  op: "Conv2DBackpropInput"
+  input: "conv2d_transpose_1/stack/_1__cf__1"
+  input: "conv2d_transpose_1/kernel"
+  input: "conv2d_transpose/BiasAdd"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 2
+        i: 2
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_1/BiasAdd"
+  op: "BiasAdd"
+  input: "conv2d_transpose_1/conv2d_transpose"
+  input: "conv2d_transpose_1/bias"
+}
+node {
+  name: "conv2d_transpose_2/conv2d_transpose"
+  op: "Conv2DBackpropInput"
+  input: "conv2d_transpose_2/stack/_2__cf__2"
+  input: "conv2d_transpose_2/kernel"
+  input: "conv2d_transpose_1/BiasAdd"
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 8
+        i: 8
+        i: 1
+      }
+    }
+  }
+}
+node {
+  name: "conv2d_transpose_2/BiasAdd"
+  op: "BiasAdd"
+  input: "conv2d_transpose_2/conv2d_transpose"
+  input: "conv2d_transpose_2/bias"
+}
+library {
+}

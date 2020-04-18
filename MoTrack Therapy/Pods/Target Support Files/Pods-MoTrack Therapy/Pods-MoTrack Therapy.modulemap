@@ -1,0 +1,6 @@
+framework module Pods_MoTrack_Therapy {
+  umbrella header "Pods-MoTrack Therapy-umbrella.h"
+
+  export *
+  module * { export * }
+}

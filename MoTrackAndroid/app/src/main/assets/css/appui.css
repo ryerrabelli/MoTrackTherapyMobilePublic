@@ -1,0 +1,716 @@
+/* Link to style guide: https://docs.google.com/document/d/1NaMlJAblgLkg6fffB6BVDszvSq_2IO1TFnozfK0Rn-4/edit */
+.motrack-btn {
+  background-color: #30ABDF;
+  color: white;
+}
+
+
+/* for some reason, the text-align doesn't work with the username/password boxes if I use the class instead */
+.ui-content, .loginpart input.username-box,  .loginpart input.password-box {
+  text-align: center;
+}
+.loginpart {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.loginpart input {
+  /* if top padding is greater than bottom padding, text is lower in the field*/
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+/* had to specify .ui-input-btn too and not just .ui-btn because otherwise the
+font-size: 24px makes the "Basic select switch" from
+ http://demos.jquerymobile.com/1.4.3/flipswitch/ not format correctly. */
+.loginpart input, .ui-input-btn.ui-btn {
+  /* the login button only is affected if you change .ui-btn as well*/
+  font-size: 24px; /*default appeared to be 16 on google chrome*/
+}
+@media screen and (min-width: 500px) {
+  .loginpart input, .ui-input-btn.ui-btn {
+    font-size: 150%
+  }
+}
+.loginpart input::placeholder {
+  font-weight: bold;
+  font-style: italic;
+}
+.authresponse {
+  color: #CF2F5E;
+}
+/* not sure if this stuff is actually better than standard width:100% or something */
+img.authtabletimage {
+  width: 100%;
+  padding-top: -webkit-calc(50% - 160px);
+  padding-top: calc(50% - 160px);
+}
+.auth-screen-main {
+  /*display: inline-block;*/
+}
+h3 {
+  font-size: 20px;
+}
+@media screen and (min-width: 500px) {
+  h3 {
+    font-size: 150%
+  }
+}
+.loginlinks p a {
+  font-weight:normal;
+  color: #30ABDF;
+}
+.loginpopup {
+  color: black;
+}
+/* for <fieldset> tags */
+#signup-user-type, #progress_exercises_optionholder  {
+  color: black;
+  font-weight: normal;
+}
+#signup-user-type legend, #progress_exercises_optionholder legend {
+  text-align: left;
+}
+#signup-user-type label {
+  font-weight: normal;
+  border: 0.5px solid black;
+  background-color: #FFF;
+  color: #30ABDF;
+}
+#progress_exercises_optionholder label{
+  padding-left: 15%;
+  font-weight: normal;
+  border: 0.2vw solid black;
+  color: #FFF;
+  text-shadow: none; /* otherwise text gets blurry */
+}​
+/* below unfortunately doesn't work, but it's supposed to refer to the label immediately following the checked input */
+#progress_exercises_optionholder input[type="radio"]:checked+label{
+   font-weight: bold;
+   font-size: 24px;
+}
+@media screen and (min-width: 500px) {
+  #progress_exercises_optionholder input[type="radio"]:checked+label {
+    font-size: 150%
+  }
+
+  #progress_exercises_optionholder label{
+    font-size: 150%
+  }
+  #progress-tabs .ui-navbar li .ui-btn {
+    font-size: 150%
+  }
+
+}
+
+
+.ui-btn, body, input::placeholder {
+  /* for some reason if the modifier is just "button", it doesn't affect the
+   buttons, but it works if you put button.class. This is because in the
+   css file, ui-btn class sets the font-family to sans-serif. I could change
+  it in the css file, but I think it is easier just to call it out here.*/
+  /* Each one is a backup going rightwards. I picked the closest serif fonts to Raleway.*/
+  font-family: Raleway, Arial, Helvetica, serif;
+}
+
+/* Necessary to do this or the "buttons with the color on the left side of the
+button representing which exercise they are for" won't be colored upon pressing
+like all the other buttons. By doing this with !important, it overrides their
+background-color. I copied the code from MoTrackTheme.css, but added !important
+to background-color and addded background-image attribute*/
+/* Button down */
+.ui-page-theme-c .ui-btn:active,
+html .ui-bar-c .ui-btn:active,
+html .ui-body-c .ui-btn:active,
+html body .ui-group-theme-c .ui-btn:active,
+html head + body .ui-btn.ui-btn-c:active {
+	background-color: #1C769C /*{c-bdown-background-color}*/ !important;
+  background-image: none !important;
+}
+/* Button down */
+.ui-page-theme-d .ui-btn:active,
+html .ui-bar-d .ui-btn:active,
+html .ui-body-d .ui-btn:active,
+html body .ui-group-theme-d .ui-btn:active,
+html head + body .ui-btn.ui-btn-d:active {
+	background-color: #1C769C /*{d-bdown-background-color}*/ !important;
+  background-image: none !important;
+}
+.ui-btn:selected {
+ background-color: #1C769C /*{c-bdown-background-color}*/ !important;
+ background-image: none !important;
+}
+
+/* Below code removes the blue halo that appears on all the input elements*/
+.ui-focus {
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ box-shadow: none !important;
+}
+
+.ui-icon-myicon:after {
+  background-image: url("images/hands.png");
+  background-size: 18px 18px;
+}
+
+.button-icon {
+  float: right;
+  margin-right: 0px;
+}
+.button-title, .button-explanation {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+.button-title {
+  /*Default is 24px*/
+  font-size: 24px;
+}
+.button-explanation {
+  font-size: 18px;
+  font-weight: normal;
+  /*max-width: 100px;*/
+  overflow: visible;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: normal;
+}
+.testers-only-1 {
+  border: 0.5vw solid #FF8888;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+@media screen and (max-width: 359px) {
+  .button-title, .button-explanation {
+    font-size: 70%
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .button-title, .button-explanation {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .button-title, .button-explanation {
+    font-size: 175%
+  }
+  /* Must do it this way because for some reason :not() isn't working
+     Must avoid #settingspanel because there isn't enough space */
+  #settingspanel .button-title, #settingspanel .button-explanation {
+    font-size: 100%
+  }
+}
+/*
+@media screen and (max-width: 293px) {
+  .button-title, .button-explanation {
+    font-size: 70%
+  }
+}
+
+@media screen and (min-width: 294px) and (max-width: 359px) {
+  .button-title, .button-explanation {
+    font-size: 83%
+  }
+}
+
+
+@media screen and (min-width: 500px) and (min-width: 649px) {
+  .button-title, .button-explanation {
+    font-size: 110%
+  }
+}
+/*
+@media screen and (min-width: 650px) {
+  .button-title, .button-explanation {
+    font-size: 150%
+  }
+}*/
+.navbar-text {
+  font-size: 32px;
+}
+@media screen and (min-width: 500px) {
+  .navbar-text {
+    font-size: 150%
+  }
+}
+
+.ui-btn.ui-corner-all {
+  border-radius: 2vw;
+}
+/* Below line keeps the icon-only buttons completely round despite setting the border-radius of the other buttons to be much smaller */
+.ui-btn-icon-notext.ui-btn-corner-all, .ui-btn-icon-notext.ui-corner-all {
+  border-radius: 1em;
+}
+.two-layer-btn {
+  /*default is 17 top and bottom padding*/
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 15%;
+}
+.testers-only-1 .two-layer-btn {
+  padding-left: 0%; /* cancels out the padding-left 15% */
+}
+.two-layer-btn-v2 {
+  /*Doesn't actually do anything, but is there for symmetry/completion */
+}
+.two-layer-btn-v2 img {
+  height: 12vw;
+}
+
+.progress-bar-holder {
+  margin-left: 2px;
+  margin-right: 4px;
+}
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border: 0px solid black; /* Removed borders Feb 25. Before was 1px. */
+  border-radius: 10px;
+}
+.progress-bar-filler {
+  /* width dictates how filled up the progress bar is. It is defined relative
+   to the total width of progress-bar (100% is fully filled, 0% is empty)*/
+  width: 0%;
+  height: 0.8vh;
+  background-color: #4CAF50; /* old color was a green 4CAF50 */
+  border-radius: 10px;
+}
+/*
+@media screen and (min-width: 500px) {
+  .progress-bar-filler {
+    height: 12px;
+  }
+  .progress-bar {
+    border-radius: 7.5px;
+  }
+}*/
+.button-with-progress-bar {
+  margin-bottom: 3px;
+}
+.loginpopup a {
+  color: #30ABDF;
+  /* This might have multiple effects, but I know it at least turns off underline: */
+  text-decoration: none;
+}
+.game-instruction-icon {
+  width: 75%
+}
+.game-instructions-entry h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.game-instructions-entry p {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: black;
+}
+@media screen and (min-width: 500px) {
+  .game-instructions-entry h3, .game-instructions-entry p3 {
+    font-size: 150%
+  }
+}
+
+/* used for toggle buttons to counter act  #loginpart input, .ui-btn {font-size: 24px;}*/
+.ui-field-contain .ui-btn {
+  font-size: 16px;
+}
+@media screen and (min-width: 500px) {
+  .ui-field-contain .ui-btn:not(.ui-flipswitch-on) {
+    font-size: 150%
+  }
+}
+
+/* Source for text on image https://www.w3schools.com/howto/howto_css_image_text.asp */
+/* Container holding the image and the text */
+.text-img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Bottom left text */
+.text-img-top-left {
+  font-size: 16px;
+  color: #30ABDF;
+  position: absolute;
+  top: 4%;
+  left: 15%;
+}
+@media screen and (min-width: 500px) {
+  .text-img-top-left {
+    font-size: 150%
+  }
+}
+
+
+/*source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text*/
+.image-text-container {
+  position: relative;
+  text-align: center;
+  color: #30ABDF;
+}
+.text-bottom-left-of-image {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.text-top-left-of-image {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.text-top-right-of-image {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.text-bottom-right-of-image {
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+}
+
+.text-center-of-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-contact-info {
+  color:#30ABDF;
+}
+
+.tutorial-header {
+  color:#30ABDF;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.faq-content {
+  color:#30ABDF;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.walk-through-nav {
+  font-size: 24px;
+  /*default is 17 top and bottom padding*/
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tutorial-content {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 500px) {
+  .tutorial-header, .faq-content, .walk-through-nav {
+    font-size: 150%
+  }
+}
+.tutorial-navigator {
+  display: inline-block;
+  min-width: 100%;
+  text-align: center;
+}
+
+.tutorial-navigator-text {
+  min-width: 20%;
+  /* Inline would be enough to put text on same line as buttons. Inline-block is necesary to keep constant width as the text changes though */
+  display: inline-block;
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.rep-count {
+  min-width: 25px;
+  /* Inline would be enough to put text on same line as buttons. Inline-block is necesary to keep constant width as the text changes though */
+  display: inline-block;
+}
+
+.ui-btn-icon-notext1 {
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+}
+
+.header-bar, .header-bar-force-with-home {
+  height: 60px;
+}
+
+.video-screen .ui-content .ui-btn {
+  margin-left: 17px;
+  margin-right: 17px;
+  padding-top: 0px;
+  padding-bottom: 0px; /*default is 17 top and bottom padding*/
+}
+.video-screen .ui-content {
+  padding: 0px; margin: 0px; height: 900px;
+}
+.video-screen .ui-content video {
+  padding: 0px; margin: 0px;
+}
+
+#leaderboard th, #leaderboard td {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#leaderboard th {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 500px) {
+  #leaderboard th {
+    font-size: 150%
+  }
+}
+#leaderboard td {
+  color: black;
+}
+
+.header-bar2 .header-text {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: black;
+  font-weight: normal;
+}
+
+.gamelistscreen-exercise-instructions {
+  width: 75%;
+  border: 0.75vw solid #30ABDF;
+  border-radius: 5vw;
+}
+
+.which-hand-gif-field-contain {
+  padding-top: 3px;
+}
+.which-hand-gif-field-contain label {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  display: inline;
+  vertical-align: 0em;
+}
+@media screen and (min-width: 500px) {
+  .which-hand-gif-field-contain {
+    font-size: 150%
+  }
+}
+
+.try-this-exercise-out-text {
+  color: black;
+}
+
+ .medical-warning {
+   font-family: times;
+   color: black;
+ }
+
+
+.generic-game-ending-v2-icon {
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#generic-ending-v2-score {
+  font-size: 36px;
+  color: black;
+}
+
+.error-box {
+  font-family: courier;
+  border: 0.3vw solid black;
+  background-color: #EBEBEB;
+  padding: 4vw;
+  padding-bottom: 4vw
+}
+.error-box h3 {
+  margin-top: 0px;
+  margin-bottom: 2vw;
+}
+.error-box p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: left;
+  /* Below two lines, padding-left and text-indent, working together to create a hanging
+     indent. Make sure that text-indent is the negative of padding-left to cancel
+     each other out for the first line.*/
+  padding-left: 7.5vw ;
+  text-indent: -7.5vw ;
+  border-bottom: 0.3vw dotted black;
+
+}
+
+
+#video2-player {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+
+/* Stretches */
+.stretchtypes_holder p {
+  margin: 0.5em;
+  font-size: 2.5vw;
+}
+.stretchtypes_holder .ui-btn {
+  margin: 0.5em;
+  font-size: 2.5vw;
+  border-radius: 2vw;
+}
+.stretch-countdown {
+  font-size: 15vw;
+  margin: 0.2em;
+
+}
+.stretch-instructions {
+  text-align: left;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+/* stack all grids below 40em (640px)
+For Chrome's iPhone X emulator, between 23 and 24 is cutoff
+Learned how to do this on "responsive grids" area of https://demos.jquerymobile.com/1.4.4/grids/*/
+@media all and (max-width: 30em) {
+	.stretchtypes_holder .ui-block-a,
+	.stretchtypes_holder .ui-block-b,
+	.stretchtypes_holder .ui-block-c,
+	.stretchtypes_holder .ui-block-d,
+	.stretchtypes_holder .ui-block-e {
+		width: 100%;
+		float: none;
+	}
+  .stretchtypes_holder .ui-block-a p,
+  .stretchtypes_holder .ui-block-b p,
+  .stretchtypes_holder .ui-block-c p,
+  .stretchtypes_holder .ui-block-d p,
+  .stretchtypes_holder .ui-block-e p {
+    font-size: 5vw;
+  }
+  .stretchtypes_holder .ui-block-a .ui-btn,
+  .stretchtypes_holder .ui-block-b .ui-btn,
+  .stretchtypes_holder .ui-block-c .ui-btn,
+  .stretchtypes_holder .ui-block-d .ui-btn,
+  .stretchtypes_holder .ui-block-e .ui-btn {
+    /* Maybe we should increase border-radius so that it looks about as curved when smaller,
+     but then we would have to do it everywhere for consistency
+    border-radius: 4vw; */
+  }
+
+}
+
+
+.access-code-settings-btns, #access-code-set-to {
+  font-family: "courier";
+}
+
+/* fixed bug where the it would look a different color after holding down on it */
+.exerciselistforsettings_optionholder li a:hover {
+  color: white;
+}
+.expandable-exercise-settings-areas .ui-grid-a .ui-block-a {
+  padding-right: 2vw;
+}
+.expandable-exercise-settings-areas .ui-grid-a .ui-block-b {
+  padding-left: 2vw;
+}
+.save-exercise-btn, .default-exercise-btn {
+  text-shadow: none !important;
+  border: 1px solid black !important;
+}
+
+#ptfirstlogintabs div[data-role="navbar"] li:not(:last-child) {
+  width: 40px;
+}
+#ptfirstlogintabs div[data-role="navbar"] li::last-child {
+  width: 200px;
+}
+#ptfirstlogintabs div[data-role="navbar"] li a {
+  background-color: white;
+  color: black;
+}
+#ptfirstlogintabs div[data-role="navbar"] {
+  padding-bottom: 0px;
+}
+#ptfirstlogintabs .ptfirstlogintab {
+  min-height: 10vh;
+  margin-bottom: 10vh;
+}
+
+#pgone  {
+  height: 10px;
+}
+
+#pgone label {
+  margin: 0px;
+}
+
+.header-bar2 .header-text {
+  font-size: 16px;
+}
+.header-bar .header-text, .header-bar-force-with-home .header-text {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: auto;
+  padding-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.header-bar .ui-btn, .header-bar-force-with-home .ui-btn {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 500px) {
+  .ui-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .ui-btn:not(.ui-flipswitch-on), .ui-field-contain .ui-btn:not(.ui-flipswitch-on), .ui-input-btn.ui-btn:not(.ui-flipswitch-on) {
+    /* Only do 1.5 because it compounds with the 150% font-size change at the top of this file (as of now, line 29): @media screen and (min-width: 500px)
+.loginpart input, .ui-input-btn.ui-btn { font-size: 150%; } */
+    font-size: 3vw;
+  }
+  body p, h1, h2, h3, h4, h5 {
+    font-size: 150%;
+  }
+  /* below overwrites the above for two-layer-buttons-v2, for example the game buttons within an exercise */
+  .ui-input-btn.ui-btn.two-layer-btn-v2, .ui-input-btn.ui-btn.two-layer-btn, #survey-btn {
+    font-size: 4.5vw;
+  }
+  .ui-input-btn.ui-btn.ui-flipswitch-on {
+    font-size: 12px;
+  }
+  .ui-mobile label, input[type="text"] {
+    font-size: 150%;
+  }
+  .header-bar2 .header-text {
+    font-size: 150%;
+  }
+  .header-bar .header-text, .header-bar .ui-btn, .header-bar-force-with-home .header-text, .header-bar-force-with-home .ui-btn{
+    font-size: 150%;
+  }
+  .header-bar-force-with-home, .header-bar-force-with-home {
+    /*height: 150px;*/
+  }
+
+
+}

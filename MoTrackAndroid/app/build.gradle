@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+//Jan 13, 2019 added io.fabric to add firebase Crashlytics https://firebase.google.com/docs/crashlytics/get-started?authuser=0#android
+apply plugin: 'io.fabric'
+
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.motracktherapy.motrack"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 72
+        versionName "2.1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11 -frtti -fexceptions"
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.motrack
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "com.android.support:support-compat:26.0.0"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //implementation 'com.google.firebase:firebase-auth:11.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation 'com.quickbirdstudios:opencv:3.4.4-contrib'
+    //Jan 13, 2019 added below lines (firebase core and crashlytics) to add firebase Crashlytics https://firebase.google.com/docs/crashlytics/get-started?authuser=0#android
+    // Check for v11.4.2 or higher
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    // Add dependency
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+    //implementation 'com.google.firebase:firebase-messaging:11.4.2'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+
+    //implementation project(':openCVLibrary310')
+    // opencv 3.4.4 with contribution packages
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'
